@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - HLJZhongkeControl (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - HLJZhongkeControl (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  HLJZhongkeControl:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  HLJZhongkeControl: 0e30799608de68a6d55ea147d8ffb9b186bcb3e5
+
+PODFILE CHECKSUM: da835d9931f2852c55aa5b8fc85c7f933574ef9a
+
+COCOAPODS: 1.10.1

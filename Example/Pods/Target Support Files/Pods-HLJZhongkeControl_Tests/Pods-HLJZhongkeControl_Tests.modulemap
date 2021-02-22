@@ -1,0 +1,6 @@
+framework module Pods_HLJZhongkeControl_Tests {
+  umbrella header "Pods-HLJZhongkeControl_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

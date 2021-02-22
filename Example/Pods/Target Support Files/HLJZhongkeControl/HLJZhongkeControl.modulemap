@@ -1,0 +1,6 @@
+framework module HLJZhongkeControl {
+  umbrella header "HLJZhongkeControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
