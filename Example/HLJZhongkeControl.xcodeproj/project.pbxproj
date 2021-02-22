@@ -22,6 +22,28 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		7E47F28074650F40D3A86AF0 /* Pods_HLJZhongkeControl_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765B7DA0DA01F0AD4BF8FAF2 /* Pods_HLJZhongkeControl_Tests.framework */; };
+		8434434A25E38D80005F5B0E /* HLJLoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434434825E38D80005F5B0E /* HLJLoginPageViewController.m */; };
+		8434434B25E38D80005F5B0E /* HLJLoginPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8434434925E38D80005F5B0E /* HLJLoginPageViewController.xib */; };
+		8434435A25E38EDD005F5B0E /* HLJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434435825E38EDD005F5B0E /* HLJBaseViewController.m */; };
+		8434436625E39074005F5B0E /* HLJRemoteControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434436425E39074005F5B0E /* HLJRemoteControlViewController.m */; };
+		8434436725E39074005F5B0E /* HLJRemoteControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8434436525E39074005F5B0E /* HLJRemoteControlViewController.xib */; };
+		8434436D25E39105005F5B0E /* icon_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434436C25E39105005F5B0E /* icon_home.png */; };
+		8434437125E39125005F5B0E /* icon_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434437025E39125005F5B0E /* icon_background.png */; };
+		8434437525E39136005F5B0E /* icon_person.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434437425E39136005F5B0E /* icon_person.png */; };
+		8434437925E39149005F5B0E /* icon_shebei.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434437825E39149005F5B0E /* icon_shebei.png */; };
+		8434437D25E3915F005F5B0E /* icon_caidan.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434437C25E3915F005F5B0E /* icon_caidan.png */; };
+		8434438125E39171005F5B0E /* icon_shouye.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434438025E39171005F5B0E /* icon_shouye.png */; };
+		8434438525E3918D005F5B0E /* icon_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434438425E3918D005F5B0E /* icon_back.png */; };
+		8434439125E39206005F5B0E /* jr@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434439025E39206005F5B0E /* jr@3x.png */; };
+		8434439925E39213005F5B0E /* shang@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434439825E39213005F5B0E /* shang@3x.png */; };
+		8434439D25E3921E005F5B0E /* xia@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434439C25E3921E005F5B0E /* xia@3x.png */; };
+		843443A225E3923F005F5B0E /* 我的-icon_kf@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443A025E3923F005F5B0E /* 我的-icon_kf@3x.png */; };
+		843443A325E3923F005F5B0E /* 我的-icon_sz@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443A125E3923F005F5B0E /* 我的-icon_sz@3x.png */; };
+		843443A725E39361005F5B0E /* icon_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443A625E39361005F5B0E /* icon_right.png */; };
+		843443AD25E39784005F5B0E /* icon_dia.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443AC25E39784005F5B0E /* icon_dia.png */; };
+		843443B525E39BB9005F5B0E /* kg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443B425E39BB9005F5B0E /* kg@3x.png */; };
+		843443BB25E3A2B2005F5B0E /* j@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443BA25E3A2B2005F5B0E /* j@3x.png */; };
+		843443BF25E3A2B8005F5B0E /* jian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443BE25E3A2B8005F5B0E /* jian@3x.png */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		969BDEC0FF5F9E3E9F9822C0 /* Pods_HLJZhongkeControl_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA770CFCD0A29AF20EA2B99A /* Pods_HLJZhongkeControl_Example.framework */; };
 /* End PBXBuildFile section */
@@ -38,7 +60,7 @@
 
 /* Begin PBXFileReference section */
 		0927372CDF032FCCDD5C042D /* Pods-HLJZhongkeControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJZhongkeControl_Example.release.xcconfig"; path = "Target Support Files/Pods-HLJZhongkeControl_Example/Pods-HLJZhongkeControl_Example.release.xcconfig"; sourceTree = "<group>"; };
-		57FF68B2317AADA05601998C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		57FF68B2317AADA05601998C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HLJZhongkeControl_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLJZhongkeControl_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,12 +80,43 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		701DC934AE97F13CA166555D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		701DC934AE97F13CA166555D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		765B7DA0DA01F0AD4BF8FAF2 /* Pods_HLJZhongkeControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLJZhongkeControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8434433D25E38D5E005F5B0E /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8434433F25E38D5E005F5B0E /* HLJZhongkeControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJZhongkeControl.h; sourceTree = "<group>"; };
+		8434434025E38D5E005F5B0E /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		8434434325E38D5E005F5B0E /* StartPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartPageViewController.h; sourceTree = "<group>"; };
+		8434434425E38D5E005F5B0E /* StartPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartPageViewController.m; sourceTree = "<group>"; };
+		8434434525E38D5E005F5B0E /* StartPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartPageViewController.xib; sourceTree = "<group>"; };
+		8434434725E38D80005F5B0E /* HLJLoginPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJLoginPageViewController.h; sourceTree = "<group>"; };
+		8434434825E38D80005F5B0E /* HLJLoginPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJLoginPageViewController.m; sourceTree = "<group>"; };
+		8434434925E38D80005F5B0E /* HLJLoginPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLJLoginPageViewController.xib; sourceTree = "<group>"; };
+		8434435725E38EDD005F5B0E /* HLJBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJBaseViewController.h; sourceTree = "<group>"; };
+		8434435825E38EDD005F5B0E /* HLJBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJBaseViewController.m; sourceTree = "<group>"; };
+		8434436325E39074005F5B0E /* HLJRemoteControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJRemoteControlViewController.h; sourceTree = "<group>"; };
+		8434436425E39074005F5B0E /* HLJRemoteControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJRemoteControlViewController.m; sourceTree = "<group>"; };
+		8434436525E39074005F5B0E /* HLJRemoteControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLJRemoteControlViewController.xib; sourceTree = "<group>"; };
+		8434436C25E39105005F5B0E /* icon_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_home.png; sourceTree = "<group>"; };
+		8434437025E39125005F5B0E /* icon_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_background.png; sourceTree = "<group>"; };
+		8434437425E39136005F5B0E /* icon_person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_person.png; sourceTree = "<group>"; };
+		8434437825E39149005F5B0E /* icon_shebei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_shebei.png; sourceTree = "<group>"; };
+		8434437C25E3915F005F5B0E /* icon_caidan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_caidan.png; sourceTree = "<group>"; };
+		8434438025E39171005F5B0E /* icon_shouye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_shouye.png; sourceTree = "<group>"; };
+		8434438425E3918D005F5B0E /* icon_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_back.png; sourceTree = "<group>"; };
+		8434439025E39206005F5B0E /* jr@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jr@3x.png"; sourceTree = "<group>"; };
+		8434439825E39213005F5B0E /* shang@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shang@3x.png"; sourceTree = "<group>"; };
+		8434439C25E3921E005F5B0E /* xia@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xia@3x.png"; sourceTree = "<group>"; };
+		843443A025E3923F005F5B0E /* 我的-icon_kf@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的-icon_kf@3x.png"; sourceTree = "<group>"; };
+		843443A125E3923F005F5B0E /* 我的-icon_sz@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的-icon_sz@3x.png"; sourceTree = "<group>"; };
+		843443A625E39361005F5B0E /* icon_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_right.png; sourceTree = "<group>"; };
+		843443AC25E39784005F5B0E /* icon_dia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_dia.png; sourceTree = "<group>"; };
+		843443B425E39BB9005F5B0E /* kg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kg@3x.png"; path = "../../../../Downloads/启动/kg@3x.png"; sourceTree = "<group>"; };
+		843443BA25E3A2B2005F5B0E /* j@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j@3x.png"; sourceTree = "<group>"; };
+		843443BE25E3A2B8005F5B0E /* jian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jian@3x.png"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BF63268E6D66B39E3E4DCDA /* Pods-HLJZhongkeControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJZhongkeControl_Example.debug.xcconfig"; path = "Target Support Files/Pods-HLJZhongkeControl_Example/Pods-HLJZhongkeControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A6E8E9AD1CA2740D3DE05EA7 /* HLJZhongkeControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HLJZhongkeControl.podspec; path = ../HLJZhongkeControl.podspec; sourceTree = "<group>"; };
+		A6E8E9AD1CA2740D3DE05EA7 /* HLJZhongkeControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HLJZhongkeControl.podspec; path = ../HLJZhongkeControl.podspec; sourceTree = "<group>"; };
 		AEBFFB2959C20EDABA9880C1 /* Pods-HLJZhongkeControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJZhongkeControl_Tests.release.xcconfig"; path = "Target Support Files/Pods-HLJZhongkeControl_Tests/Pods-HLJZhongkeControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DA770CFCD0A29AF20EA2B99A /* Pods_HLJZhongkeControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLJZhongkeControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE775A11E10CAB8B2BD29037 /* Pods-HLJZhongkeControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJZhongkeControl_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HLJZhongkeControl_Tests/Pods-HLJZhongkeControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,6 +231,8 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				8434433C25E38D5E005F5B0E /* Assets */,
+				8434433E25E38D5E005F5B0E /* Classes */,
 				A6E8E9AD1CA2740D3DE05EA7 /* HLJZhongkeControl.podspec */,
 				57FF68B2317AADA05601998C /* README.md */,
 				701DC934AE97F13CA166555D /* LICENSE */,
@@ -193,8 +248,94 @@
 				FE775A11E10CAB8B2BD29037 /* Pods-HLJZhongkeControl_Tests.debug.xcconfig */,
 				AEBFFB2959C20EDABA9880C1 /* Pods-HLJZhongkeControl_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8434433C25E38D5E005F5B0E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				843443BE25E3A2B8005F5B0E /* jian@3x.png */,
+				843443BA25E3A2B2005F5B0E /* j@3x.png */,
+				843443A625E39361005F5B0E /* icon_right.png */,
+				8434439C25E3921E005F5B0E /* xia@3x.png */,
+				8434439825E39213005F5B0E /* shang@3x.png */,
+				843443B425E39BB9005F5B0E /* kg@3x.png */,
+				8434439025E39206005F5B0E /* jr@3x.png */,
+				843443A025E3923F005F5B0E /* 我的-icon_kf@3x.png */,
+				843443A125E3923F005F5B0E /* 我的-icon_sz@3x.png */,
+				843443AC25E39784005F5B0E /* icon_dia.png */,
+				8434438425E3918D005F5B0E /* icon_back.png */,
+				8434438025E39171005F5B0E /* icon_shouye.png */,
+				8434437C25E3915F005F5B0E /* icon_caidan.png */,
+				8434437825E39149005F5B0E /* icon_shebei.png */,
+				8434437425E39136005F5B0E /* icon_person.png */,
+				8434437025E39125005F5B0E /* icon_background.png */,
+				8434436C25E39105005F5B0E /* icon_home.png */,
+				8434433D25E38D5E005F5B0E /* .gitkeep */,
+			);
+			name = Assets;
+			path = ../HLJZhongkeControl/Assets;
+			sourceTree = "<group>";
+		};
+		8434433E25E38D5E005F5B0E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8434433F25E38D5E005F5B0E /* HLJZhongkeControl.h */,
+				8434434025E38D5E005F5B0E /* .gitkeep */,
+				8434434125E38D5E005F5B0E /* VC */,
+			);
+			name = Classes;
+			path = ../HLJZhongkeControl/Classes;
+			sourceTree = "<group>";
+		};
+		8434434125E38D5E005F5B0E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				8434436225E3901A005F5B0E /* RemoteControl */,
+				8434435625E38ECA005F5B0E /* BaseVC */,
+				8434434625E38D68005F5B0E /* LoginPage */,
+				8434434225E38D5E005F5B0E /* StartPage */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8434434225E38D5E005F5B0E /* StartPage */ = {
+			isa = PBXGroup;
+			children = (
+				8434434325E38D5E005F5B0E /* StartPageViewController.h */,
+				8434434425E38D5E005F5B0E /* StartPageViewController.m */,
+				8434434525E38D5E005F5B0E /* StartPageViewController.xib */,
+			);
+			path = StartPage;
+			sourceTree = "<group>";
+		};
+		8434434625E38D68005F5B0E /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				8434434725E38D80005F5B0E /* HLJLoginPageViewController.h */,
+				8434434825E38D80005F5B0E /* HLJLoginPageViewController.m */,
+				8434434925E38D80005F5B0E /* HLJLoginPageViewController.xib */,
+			);
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		8434435625E38ECA005F5B0E /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				8434435725E38EDD005F5B0E /* HLJBaseViewController.h */,
+				8434435825E38EDD005F5B0E /* HLJBaseViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		8434436225E3901A005F5B0E /* RemoteControl */ = {
+			isa = PBXGroup;
+			children = (
+				8434436325E39074005F5B0E /* HLJRemoteControlViewController.h */,
+				8434436425E39074005F5B0E /* HLJRemoteControlViewController.m */,
+				8434436525E39074005F5B0E /* HLJRemoteControlViewController.xib */,
+			);
+			path = RemoteControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +400,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -278,10 +420,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8434437D25E3915F005F5B0E /* icon_caidan.png in Resources */,
+				8434438125E39171005F5B0E /* icon_shouye.png in Resources */,
+				8434439D25E3921E005F5B0E /* xia@3x.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				843443A725E39361005F5B0E /* icon_right.png in Resources */,
+				8434439925E39213005F5B0E /* shang@3x.png in Resources */,
+				843443BB25E3A2B2005F5B0E /* j@3x.png in Resources */,
+				8434439125E39206005F5B0E /* jr@3x.png in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				843443A325E3923F005F5B0E /* 我的-icon_sz@3x.png in Resources */,
+				843443BF25E3A2B8005F5B0E /* jian@3x.png in Resources */,
+				8434438525E3918D005F5B0E /* icon_back.png in Resources */,
+				843443B525E39BB9005F5B0E /* kg@3x.png in Resources */,
+				8434436D25E39105005F5B0E /* icon_home.png in Resources */,
+				8434434B25E38D80005F5B0E /* HLJLoginPageViewController.xib in Resources */,
+				843443AD25E39784005F5B0E /* icon_dia.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				8434437125E39125005F5B0E /* icon_background.png in Resources */,
+				8434437525E39136005F5B0E /* icon_person.png in Resources */,
+				8434437925E39149005F5B0E /* icon_shebei.png in Resources */,
+				843443A225E3923F005F5B0E /* 我的-icon_kf@3x.png in Resources */,
+				8434436725E39074005F5B0E /* HLJRemoteControlViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +546,10 @@
 			files = (
 				6003F59E195388D20070C39A /* HLJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HLJViewController.m in Sources */,
+				8434436625E39074005F5B0E /* HLJRemoteControlViewController.m in Sources */,
+				8434434A25E38D80005F5B0E /* HLJLoginPageViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				8434435A25E38EDD005F5B0E /* HLJBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +680,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HLJZhongkeControl/HLJZhongkeControl-Prefix.pch";
 				INFOPLIST_FILE = "HLJZhongkeControl/HLJZhongkeControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +697,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HLJZhongkeControl/HLJZhongkeControl-Prefix.pch";
 				INFOPLIST_FILE = "HLJZhongkeControl/HLJZhongkeControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

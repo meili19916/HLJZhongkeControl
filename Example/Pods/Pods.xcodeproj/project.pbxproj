@@ -8,127 +8,133 @@
 
 /* Begin PBXBuildFile section */
 		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08282A0B4905F08A38B435DC6466B817 /* StartPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F79695069F8788848E882A59B30DDF /* StartPageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C5830C2DF63CDD0975CAF8DD9F94838 /* Pods-HLJZhongkeControl_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A6CAB4816C7948154A394678CE3065 /* Pods-HLJZhongkeControl_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		2900A8CD44163C7754838A2C8D25E86B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		170DA07B23004D7543139C1722275E2A /* HLJZhongkeControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C97CD553E46520B2786AF1337E333C82 /* HLJZhongkeControl-dummy.m */; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
-		3507244B675905381B50846085EAEE4F /* HLJZhongkeControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F96BED7B0050FE4CB46B2953620ED649 /* HLJZhongkeControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		46419257D2D437C6CD42C89ED426F24D /* Pods-HLJZhongkeControl_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E570C8585B9F65F892DD3AB17C02B65 /* Pods-HLJZhongkeControl_Example-dummy.m */; };
+		4AE669D8F028AC5F50AB727835D679A7 /* StartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5435B1BAB173D658D8069CA70C7C7A /* StartPageViewController.m */; };
 		5FC6D37593E27BCF51EEB9065F8AF193 /* Pods-HLJZhongkeControl_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 68450D2BC8EA7EF5DFEA378BE4EE7BBC /* Pods-HLJZhongkeControl_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D16A347E36C23ABC562E08A5AA047C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
-		7345F9C132DD7757868A2EC257549BE9 /* HLJZhongkeControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 77ED1B03E77E75081CF0BC63B50294DC /* HLJZhongkeControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		761C5ABA57AE037D19B08238646CB8C5 /* StartPageViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 13296C063E24351FC70755ED89F23827 /* StartPageViewController.xib */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91C4896798892E911DBD0F181B353A91 /* HLJZhongkeControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 339D8C223CCC47468FBE0D4769FEED12 /* HLJZhongkeControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97875B5F47ACAC29C9A8F2B6951F7FF6 /* HLJLoginPageViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 5D46EAAD7E3B7894AC42A54AB2A911DA /* HLJLoginPageViewController.xib */; };
 		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
 		9F7C156AF56CFF5BFD726E925142CF19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
-		A82761479E385865409C9B39CB863A0E /* HLJZhongkeControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 594D980B33F7593EA162E59EC334CE24 /* HLJZhongkeControl-dummy.m */; };
+		A52ABFCBC78211B72B174EFEEAE273A9 /* HLJLoginPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C871B9211A6BFAA3BC510C167B295FC /* HLJLoginPageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABF0DC615B1C6BD78C2278D748DC3109 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B9CD69DA1BA468167AF430FE9E1CA72A /* HLJLoginPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB862DFD6A89D0614163F665E69E127 /* HLJLoginPageViewController.m */; };
 		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6FFDB4D2307D25D550405EF43DD87B4 /* HLJZhongkeControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD34E24DFAB91596C9AB0CAF67E27CB6 /* HLJZhongkeControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E52422C9554329906A2D39D1BB1291D6 /* StartPageViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 6863F0B1A5E0005D6468D9F72794BD52 /* StartPageViewController.xib */; };
+		E7F8EEDC98EA718B31B6336A0A7E9AAE /* StartPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD0945EC01E4155DBB440BE39ECED98 /* StartPageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
-		EF94B5AF781BB507D43868417E9F8D66 /* StartPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F90B69277272760B9AAAB6D41F0EDB80 /* StartPageViewController.m */; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8719063B6BBE72CCDD26DB07F32926C /* Pods-HLJZhongkeControl_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B987CBF7B1E2750DAB7E1955E098D141 /* Pods-HLJZhongkeControl_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		43EEEA6EB5B172C1F456731B5F3386AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
-			remoteInfo = FBSnapshotTestCase;
-		};
-		4A69D0AEABC1B924F3447E4CE5D1C51A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E23E279CD0DB7A4790368D90BEEBAC98;
-			remoteInfo = HLJZhongkeControl;
-		};
-		4B0BFAAB3BF04502CD99E335A284E93F /* PBXContainerItemProxy */ = {
+		8DE9C70368249484E2E23837119389A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0D69448CB5BE3AFD7E4CD54C105BF25B;
 			remoteInfo = "Pods-HLJZhongkeControl_Example";
 		};
+		A02F837CD2861395BD963D70122637A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		A68F4B8733B3F2C5D0363BD02CDE0B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E23E279CD0DB7A4790368D90BEEBAC98;
+			remoteInfo = HLJZhongkeControl;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0D58F444BBD8A5DE8BCF8E68E847FD85 /* Pods-HLJZhongkeControl_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HLJZhongkeControl_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		0EE3189A502C66D758D592AB63E005E1 /* Pods-HLJZhongkeControl_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HLJZhongkeControl_Example.modulemap"; sourceTree = "<group>"; };
+		0F245951E8A963DEE755D47DDB715023 /* HLJZhongkeControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HLJZhongkeControl.modulemap; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		13296C063E24351FC70755ED89F23827 /* StartPageViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = StartPageViewController.xib; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		246B9925C2A915C43B0C835F5DAF38D2 /* Pods_HLJZhongkeControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HLJZhongkeControl_Example.framework; path = "Pods-HLJZhongkeControl_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2637EB22D742B1143F4312D19B725E41 /* HLJZhongkeControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HLJZhongkeControl-prefix.pch"; sourceTree = "<group>"; };
 		26402AF753BFC7D8AB112BA9AC33C327 /* HLJZhongkeControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HLJZhongkeControl.framework; path = HLJZhongkeControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		29184D94AD0B6BEC7E285E0DF9E3646C /* HLJZhongkeControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HLJZhongkeControl.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		345A379D5C83AEB99D0CA5C8B112AC6C /* HLJZhongkeControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HLJZhongkeControl.modulemap; sourceTree = "<group>"; };
+		339D8C223CCC47468FBE0D4769FEED12 /* HLJZhongkeControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HLJZhongkeControl.h; path = HLJZhongkeControl/Classes/HLJZhongkeControl.h; sourceTree = "<group>"; };
 		34AC80D7E12DF503EDE347EFA73CA002 /* Pods_HLJZhongkeControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HLJZhongkeControl_Tests.framework; path = "Pods-HLJZhongkeControl_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		38B3F2864FEC028258FDF0BBCC0C6224 /* HLJZhongkeControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HLJZhongkeControl-Info.plist"; sourceTree = "<group>"; };
 		3ACBBE8E576688B957A00DA91E132642 /* Pods-HLJZhongkeControl_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLJZhongkeControl_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		3F9E66036B86D5BD42F606A8F94329DC /* HLJZhongkeControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HLJZhongkeControl.debug.xcconfig; sourceTree = "<group>"; };
+		3FFFE411BC7F470DF87F4E5D2CC2759A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		434A504D67C393325D122B492A7DC824 /* Pods-HLJZhongkeControl_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HLJZhongkeControl_Example-Info.plist"; sourceTree = "<group>"; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		4F3EE2A967DB932DC196FD6778F3CAD1 /* HLJZhongkeControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HLJZhongkeControl.debug.xcconfig; sourceTree = "<group>"; };
 		54410EE0485EE9FD0BD9B3E924BA4AE1 /* Pods-HLJZhongkeControl_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HLJZhongkeControl_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		594D980B33F7593EA162E59EC334CE24 /* HLJZhongkeControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HLJZhongkeControl-dummy.m"; sourceTree = "<group>"; };
 		59A6CAB4816C7948154A394678CE3065 /* Pods-HLJZhongkeControl_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HLJZhongkeControl_Example-umbrella.h"; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D46EAAD7E3B7894AC42A54AB2A911DA /* HLJLoginPageViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = HLJLoginPageViewController.xib; sourceTree = "<group>"; };
+		5E31608493A29A558525E345B09A25E1 /* HLJZhongkeControl-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HLJZhongkeControl-Info.plist"; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		68450D2BC8EA7EF5DFEA378BE4EE7BBC /* Pods-HLJZhongkeControl_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HLJZhongkeControl_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6863F0B1A5E0005D6468D9F72794BD52 /* StartPageViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = StartPageViewController.xib; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		70DB5A2E0F9ACE209CAF11DCA2A81AA8 /* Pods-HLJZhongkeControl_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HLJZhongkeControl_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		77ED1B03E77E75081CF0BC63B50294DC /* HLJZhongkeControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HLJZhongkeControl.h; path = HLJZhongkeControl/Classes/HLJZhongkeControl.h; sourceTree = "<group>"; };
+		7C871B9211A6BFAA3BC510C167B295FC /* HLJLoginPageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HLJLoginPageViewController.h; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		8572208A94A8278D1CE96CD01420DC2D /* Pods-HLJZhongkeControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLJZhongkeControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
-		95F79695069F8788848E882A59B30DDF /* StartPageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StartPageViewController.h; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		96A5BB771D265A5BB09B341F4BD474A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E570C8585B9F65F892DD3AB17C02B65 /* Pods-HLJZhongkeControl_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HLJZhongkeControl_Example-dummy.m"; sourceTree = "<group>"; };
-		A7128DF202972A6D1FB314F6C3063F36 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		ABD0945EC01E4155DBB440BE39ECED98 /* StartPageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StartPageViewController.h; sourceTree = "<group>"; };
 		AC553058C2CC34CE63DC3395BA599D01 /* Pods-HLJZhongkeControl_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HLJZhongkeControl_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B50D615D078385F2132EC119CB7B1336 /* Pods-HLJZhongkeControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLJZhongkeControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		B987CBF7B1E2750DAB7E1955E098D141 /* Pods-HLJZhongkeControl_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HLJZhongkeControl_Tests-dummy.m"; sourceTree = "<group>"; };
-		C997D148FBFFA703B6B03DF3EFFF4F5E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C97CD553E46520B2786AF1337E333C82 /* HLJZhongkeControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HLJZhongkeControl-dummy.m"; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		D1CC1E4C7F57EEE5C2D8190896039CF7 /* HLJZhongkeControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HLJZhongkeControl.release.xcconfig; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		D884495150DD974E8A36A142C0E4DD3B /* HLJZhongkeControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HLJZhongkeControl.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DA29A74700DBF023FCB4D32603A8D201 /* Pods-HLJZhongkeControl_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HLJZhongkeControl_Tests-Info.plist"; sourceTree = "<group>"; };
+		DBB862DFD6A89D0614163F665E69E127 /* HLJLoginPageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HLJLoginPageViewController.m; sourceTree = "<group>"; };
 		DC240BA4E0C2DEEEFA5FE1C4C9CDFB07 /* Pods-HLJZhongkeControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLJZhongkeControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DD532FD22EBCF8AAA637CEA216653506 /* Pods-HLJZhongkeControl_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HLJZhongkeControl_Tests.modulemap"; sourceTree = "<group>"; };
-		DD78D0F17A14804055A7CAB7DE4FDB90 /* HLJZhongkeControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HLJZhongkeControl.release.xcconfig; sourceTree = "<group>"; };
 		E6509CA040EC3D027374B060D65DC800 /* Pods-HLJZhongkeControl_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HLJZhongkeControl_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F90B69277272760B9AAAB6D41F0EDB80 /* StartPageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StartPageViewController.m; sourceTree = "<group>"; };
-		F96BED7B0050FE4CB46B2953620ED649 /* HLJZhongkeControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HLJZhongkeControl-umbrella.h"; sourceTree = "<group>"; };
+		EA734215996F2ED8BEEA5E3140C40CB0 /* HLJZhongkeControl-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HLJZhongkeControl-prefix.pch"; sourceTree = "<group>"; };
+		ED5435B1BAB173D658D8069CA70C7C7A /* StartPageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StartPageViewController.m; sourceTree = "<group>"; };
+		FD34E24DFAB91596C9AB0CAF67E27CB6 /* HLJZhongkeControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HLJZhongkeControl-umbrella.h"; sourceTree = "<group>"; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		FFB244DDA36E16DBBC8A240411573BFE /* Pods-HLJZhongkeControl_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HLJZhongkeControl_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,19 +148,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50BED9F65931E9CA3B45E1D6DDC369CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF0DC615B1C6BD78C2278D748DC3109 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53B94E0E75598D0725C94BCB877A2C2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6D16A347E36C23ABC562E08A5AA047C2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B11D3A005C1F20A6FA9E612B897E9E12 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2900A8CD44163C7754838A2C8D25E86B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +178,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09FEA8A00A90FB322D90BD8E65F99571 /* LoginPage */ = {
+			isa = PBXGroup;
+			children = (
+				7C871B9211A6BFAA3BC510C167B295FC /* HLJLoginPageViewController.h */,
+				DBB862DFD6A89D0614163F665E69E127 /* HLJLoginPageViewController.m */,
+				5D46EAAD7E3B7894AC42A54AB2A911DA /* HLJLoginPageViewController.xib */,
+			);
+			name = LoginPage;
+			path = LoginPage;
+			sourceTree = "<group>";
+		};
 		12F624E493E45F96ABDF4A341781AC05 /* Pods-HLJZhongkeControl_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +204,42 @@
 			);
 			name = "Pods-HLJZhongkeControl_Example";
 			path = "Target Support Files/Pods-HLJZhongkeControl_Example";
+			sourceTree = "<group>";
+		};
+		16138CC83ABEBF9A5B429BA33FED2288 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				09FEA8A00A90FB322D90BD8E65F99571 /* LoginPage */,
+				3BAAA962298BA6EB51966B20666C8AD5 /* StartPage */,
+			);
+			name = VC;
+			path = HLJZhongkeControl/Classes/VC;
+			sourceTree = "<group>";
+		};
+		2C9BB2C599F22E513DBB6A5BCF6EF687 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F245951E8A963DEE755D47DDB715023 /* HLJZhongkeControl.modulemap */,
+				C97CD553E46520B2786AF1337E333C82 /* HLJZhongkeControl-dummy.m */,
+				5E31608493A29A558525E345B09A25E1 /* HLJZhongkeControl-Info.plist */,
+				EA734215996F2ED8BEEA5E3140C40CB0 /* HLJZhongkeControl-prefix.pch */,
+				FD34E24DFAB91596C9AB0CAF67E27CB6 /* HLJZhongkeControl-umbrella.h */,
+				3F9E66036B86D5BD42F606A8F94329DC /* HLJZhongkeControl.debug.xcconfig */,
+				D1CC1E4C7F57EEE5C2D8190896039CF7 /* HLJZhongkeControl.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HLJZhongkeControl";
+			sourceTree = "<group>";
+		};
+		3BAAA962298BA6EB51966B20666C8AD5 /* StartPage */ = {
+			isa = PBXGroup;
+			children = (
+				ABD0945EC01E4155DBB440BE39ECED98 /* StartPageViewController.h */,
+				ED5435B1BAB173D658D8069CA70C7C7A /* StartPageViewController.m */,
+				6863F0B1A5E0005D6468D9F72794BD52 /* StartPageViewController.xib */,
+			);
+			name = StartPage;
+			path = StartPage;
 			sourceTree = "<group>";
 		};
 		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
@@ -221,35 +274,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8EB9B4F3EB2BC932B64691EF6B27D40B /* HLJZhongkeControl */ = {
-			isa = PBXGroup;
-			children = (
-				77ED1B03E77E75081CF0BC63B50294DC /* HLJZhongkeControl.h */,
-				C17A372ED5888ABA1C5E28D3FE4E4DFA /* Pod */,
-				CA99584A5EA40BB49428A8E09A88993A /* Support Files */,
-				D45B7DE62F6C1B082B973AB52E40DD01 /* VC */,
-			);
-			name = HLJZhongkeControl;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
 				3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */,
 			);
 			name = SwiftSupport;
-			sourceTree = "<group>";
-		};
-		997CF8671E3C4721DA38A38239F09B62 /* StartPage */ = {
-			isa = PBXGroup;
-			children = (
-				95F79695069F8788848E882A59B30DDF /* StartPageViewController.h */,
-				F90B69277272760B9AAAB6D41F0EDB80 /* StartPageViewController.m */,
-				13296C063E24351FC70755ED89F23827 /* StartPageViewController.xib */,
-			);
-			name = StartPage;
-			path = StartPage;
 			sourceTree = "<group>";
 		};
 		A005C28FCBFCE597A8ACF406DBF20B88 /* Pods-HLJZhongkeControl_Tests */ = {
@@ -276,6 +306,16 @@
 				A005C28FCBFCE597A8ACF406DBF20B88 /* Pods-HLJZhongkeControl_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AFCBA81798423196290750C5ECD31CA5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D884495150DD974E8A36A142C0E4DD3B /* HLJZhongkeControl.podspec */,
+				96A5BB771D265A5BB09B341F4BD474A5 /* LICENSE */,
+				3FFFE411BC7F470DF87F4E5D2CC2759A /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
@@ -312,29 +352,16 @@
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
-		C17A372ED5888ABA1C5E28D3FE4E4DFA /* Pod */ = {
+		CC0EE0B6A5A880E12071127EFC5569C9 /* HLJZhongkeControl */ = {
 			isa = PBXGroup;
 			children = (
-				29184D94AD0B6BEC7E285E0DF9E3646C /* HLJZhongkeControl.podspec */,
-				A7128DF202972A6D1FB314F6C3063F36 /* LICENSE */,
-				C997D148FBFFA703B6B03DF3EFFF4F5E /* README.md */,
+				339D8C223CCC47468FBE0D4769FEED12 /* HLJZhongkeControl.h */,
+				AFCBA81798423196290750C5ECD31CA5 /* Pod */,
+				2C9BB2C599F22E513DBB6A5BCF6EF687 /* Support Files */,
+				16138CC83ABEBF9A5B429BA33FED2288 /* VC */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		CA99584A5EA40BB49428A8E09A88993A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				345A379D5C83AEB99D0CA5C8B112AC6C /* HLJZhongkeControl.modulemap */,
-				594D980B33F7593EA162E59EC334CE24 /* HLJZhongkeControl-dummy.m */,
-				38B3F2864FEC028258FDF0BBCC0C6224 /* HLJZhongkeControl-Info.plist */,
-				2637EB22D742B1143F4312D19B725E41 /* HLJZhongkeControl-prefix.pch */,
-				F96BED7B0050FE4CB46B2953620ED649 /* HLJZhongkeControl-umbrella.h */,
-				4F3EE2A967DB932DC196FD6778F3CAD1 /* HLJZhongkeControl.debug.xcconfig */,
-				DD78D0F17A14804055A7CAB7DE4FDB90 /* HLJZhongkeControl.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HLJZhongkeControl";
+			name = HLJZhongkeControl;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -349,15 +376,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		D45B7DE62F6C1B082B973AB52E40DD01 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				997CF8671E3C4721DA38A38239F09B62 /* StartPage */,
-			);
-			name = VC;
-			path = HLJZhongkeControl/Classes/VC;
-			sourceTree = "<group>";
-		};
 		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,7 +387,7 @@
 		F1AEB796DB02D450BADC97E960F1B684 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8EB9B4F3EB2BC932B64691EF6B27D40B /* HLJZhongkeControl */,
+				CC0EE0B6A5A880E12071127EFC5569C9 /* HLJZhongkeControl */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -388,16 +406,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2184B27DC4D5327C2380E7861AE6C673 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3507244B675905381B50846085EAEE4F /* HLJZhongkeControl-umbrella.h in Headers */,
-				7345F9C132DD7757868A2EC257549BE9 /* HLJZhongkeControl.h in Headers */,
-				08282A0B4905F08A38B435DC6466B817 /* StartPageViewController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		384DE8A8021C5DA5E256BCFEC3D478A9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,6 +437,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB52BE8E1DD06549AC2225BB576682C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52ABFCBC78211B72B174EFEEAE273A9 /* HLJLoginPageViewController.h in Headers */,
+				C6FFDB4D2307D25D550405EF43DD87B4 /* HLJZhongkeControl-umbrella.h in Headers */,
+				91C4896798892E911DBD0F181B353A91 /* HLJZhongkeControl.h in Headers */,
+				E7F8EEDC98EA718B31B6336A0A7E9AAE /* StartPageViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -444,7 +463,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				014239FF1B504AA43221D459E0540D11 /* PBXTargetDependency */,
+				9164DA13DC15B0D0429AD9A635423341 /* PBXTargetDependency */,
 			);
 			name = "Pods-HLJZhongkeControl_Example";
 			productName = "Pods-HLJZhongkeControl_Example";
@@ -463,8 +482,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				2C9665F3CCC8058EEBDEB3F3C831D5A3 /* PBXTargetDependency */,
-				146789F87AB30994D82EDFCF045D016D /* PBXTargetDependency */,
+				35F6C9741BD54E01578A80620821EC9F /* PBXTargetDependency */,
+				AA00C0E76880EA003E5CE292A30B83DC /* PBXTargetDependency */,
 			);
 			name = "Pods-HLJZhongkeControl_Tests";
 			productName = "Pods-HLJZhongkeControl_Tests";
@@ -491,12 +510,12 @@
 		};
 		E23E279CD0DB7A4790368D90BEEBAC98 /* HLJZhongkeControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4F85963F710C19AFFDA74B56C8B4A49 /* Build configuration list for PBXNativeTarget "HLJZhongkeControl" */;
+			buildConfigurationList = 70EB713FEFDE563F6D7EAE0EABF8DC36 /* Build configuration list for PBXNativeTarget "HLJZhongkeControl" */;
 			buildPhases = (
-				2184B27DC4D5327C2380E7861AE6C673 /* Headers */,
-				BD83B62582D29CCF108A77D6120BF3E7 /* Sources */,
-				B11D3A005C1F20A6FA9E612B897E9E12 /* Frameworks */,
-				450556A509AF75AC96C5C15FEA65229B /* Resources */,
+				DB52BE8E1DD06549AC2225BB576682C8 /* Headers */,
+				E0BB7ED50C7DA9A86D7842A70DBDC0D2 /* Sources */,
+				50BED9F65931E9CA3B45E1D6DDC369CF /* Frameworks */,
+				0F15DEF608709A62F401F20C4FEF8F31 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -538,7 +557,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		450556A509AF75AC96C5C15FEA65229B /* Resources */ = {
+		0F15DEF608709A62F401F20C4FEF8F31 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -593,16 +612,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD83B62582D29CCF108A77D6120BF3E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A82761479E385865409C9B39CB863A0E /* HLJZhongkeControl-dummy.m in Sources */,
-				EF94B5AF781BB507D43868417E9F8D66 /* StartPageViewController.m in Sources */,
-				761C5ABA57AE037D19B08238646CB8C5 /* StartPageViewController.xib in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D3D2E17434E93CB4E6D40E39D4A5DD88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -611,26 +620,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0BB7ED50C7DA9A86D7842A70DBDC0D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9CD69DA1BA468167AF430FE9E1CA72A /* HLJLoginPageViewController.m in Sources */,
+				97875B5F47ACAC29C9A8F2B6951F7FF6 /* HLJLoginPageViewController.xib in Sources */,
+				170DA07B23004D7543139C1722275E2A /* HLJZhongkeControl-dummy.m in Sources */,
+				4AE669D8F028AC5F50AB727835D679A7 /* StartPageViewController.m in Sources */,
+				E52422C9554329906A2D39D1BB1291D6 /* StartPageViewController.xib in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		014239FF1B504AA43221D459E0540D11 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HLJZhongkeControl;
-			target = E23E279CD0DB7A4790368D90BEEBAC98 /* HLJZhongkeControl */;
-			targetProxy = 4A69D0AEABC1B924F3447E4CE5D1C51A /* PBXContainerItemProxy */;
-		};
-		146789F87AB30994D82EDFCF045D016D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-HLJZhongkeControl_Example";
-			target = 0D69448CB5BE3AFD7E4CD54C105BF25B /* Pods-HLJZhongkeControl_Example */;
-			targetProxy = 4B0BFAAB3BF04502CD99E335A284E93F /* PBXContainerItemProxy */;
-		};
-		2C9665F3CCC8058EEBDEB3F3C831D5A3 /* PBXTargetDependency */ = {
+		35F6C9741BD54E01578A80620821EC9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSnapshotTestCase;
 			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 43EEEA6EB5B172C1F456731B5F3386AA /* PBXContainerItemProxy */;
+			targetProxy = A02F837CD2861395BD963D70122637A7 /* PBXContainerItemProxy */;
+		};
+		9164DA13DC15B0D0429AD9A635423341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HLJZhongkeControl;
+			target = E23E279CD0DB7A4790368D90BEEBAC98 /* HLJZhongkeControl */;
+			targetProxy = A68F4B8733B3F2C5D0363BD02CDE0B54 /* PBXContainerItemProxy */;
+		};
+		AA00C0E76880EA003E5CE292A30B83DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HLJZhongkeControl_Example";
+			target = 0D69448CB5BE3AFD7E4CD54C105BF25B /* Pods-HLJZhongkeControl_Example */;
+			targetProxy = 8DE9C70368249484E2E23837119389A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -701,36 +722,6 @@
 			};
 			name = Debug;
 		};
-		30CC06FD1A0490B38BA1995A0B393E81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F3EE2A967DB932DC196FD6778F3CAD1 /* HLJZhongkeControl.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl.modulemap";
-				PRODUCT_MODULE_NAME = HLJZhongkeControl;
-				PRODUCT_NAME = HLJZhongkeControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		3E39A517897BFCDD1DD7268CB1B69BE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
@@ -787,6 +778,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BD3B979E0BDFF58CEC2C0C40796933E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1CC1E4C7F57EEE5C2D8190896039CF7 /* HLJZhongkeControl.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl.modulemap";
+				PRODUCT_MODULE_NAME = HLJZhongkeControl;
+				PRODUCT_NAME = HLJZhongkeControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -887,6 +909,36 @@
 			};
 			name = Release;
 		};
+		DDECB3CB2D6C833CBA215A4BCC990731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9E66036B86D5BD42F606A8F94329DC /* HLJZhongkeControl.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl.modulemap";
+				PRODUCT_MODULE_NAME = HLJZhongkeControl;
+				PRODUCT_NAME = HLJZhongkeControl;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E7E8AFF2BC0B55EFF60A543B5D593D86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8572208A94A8278D1CE96CD01420DC2D /* Pods-HLJZhongkeControl_Tests.debug.xcconfig */;
@@ -984,37 +1036,6 @@
 			};
 			name = Release;
 		};
-		F46156D0225C80D9E10F6CE01F8907FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD78D0F17A14804055A7CAB7DE4FDB90 /* HLJZhongkeControl.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HLJZhongkeControl/HLJZhongkeControl.modulemap";
-				PRODUCT_MODULE_NAME = HLJZhongkeControl;
-				PRODUCT_NAME = HLJZhongkeControl;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1036,20 +1057,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		70EB713FEFDE563F6D7EAE0EABF8DC36 /* Build configuration list for PBXNativeTarget "HLJZhongkeControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDECB3CB2D6C833CBA215A4BCC990731 /* Debug */,
+				6BD3B979E0BDFF58CEC2C0C40796933E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A38070E189561F257BBD5A0A55CACCCF /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3E39A517897BFCDD1DD7268CB1B69BE9 /* Debug */,
 				BF531801B332EDF71FA8F4F9667B86BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B4F85963F710C19AFFDA74B56C8B4A49 /* Build configuration list for PBXNativeTarget "HLJZhongkeControl" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				30CC06FD1A0490B38BA1995A0B393E81 /* Debug */,
-				F46156D0225C80D9E10F6CE01F8907FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
