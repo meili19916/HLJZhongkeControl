@@ -11,7 +11,9 @@
 #endif
 
 #import "HLJZhongkeControl.h"
+#import "HLJBaseViewController.h"
 #import "HLJLoginPageViewController.h"
+#import "HLJRemoteControlViewController.h"
 #import "StartPageViewController.h"
 
 FOUNDATION_EXPORT double HLJZhongkeControlVersionNumber;

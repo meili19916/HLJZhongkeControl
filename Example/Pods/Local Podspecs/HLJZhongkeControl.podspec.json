@@ -1,6 +1,6 @@
 {
   "name": "HLJZhongkeControl",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "summary": "A short description of HLJZhongkeControl.",
   "description": "SDK",
   "homepage": "https://github.com/meili19916/HLJZhongkeControl",
@@ -13,10 +13,26 @@
   },
   "source": {
     "git": "https://github.com/meili19916/HLJZhongkeControl.git",
-    "tag": "0.1.0"
+    "tag": "0.1.4"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
-  "source_files": "HLJZhongkeControl/Classes/**/*"
+  "source_files": "HLJZhongkeControl/Classes/**/*",
+  "resource_bundles": {
+    "HLJZhongkeControl": [
+      "HLJZhongkeControl/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "CocoaAsyncSocket": [
+      "~> 7.6.5"
+    ],
+    "AFNetworking": [
+
+    ],
+    "Toast": [
+
+    ]
+  }
 }
