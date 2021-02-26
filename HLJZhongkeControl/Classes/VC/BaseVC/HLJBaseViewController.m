@@ -18,7 +18,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
+- (CGFloat)sizeLineFeedWithFont:(CGFloat)fontSize textSizeWidht:(CGFloat)widht text:(NSString*)text{
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, widht, 0)];
+    textView.text = text;
+    textView.font = [UIFont systemFontOfSize:fontSize];
+    CGSize size = CGSizeMake(widht, MAXFLOAT);
+    CGSize constraint = [textView sizeThatFits:size];
+    return constraint.height;
+}
 
+- (CGFloat)heightLineFeedWithFont:(UIFont*)font textSizeWidht:(CGFloat)widht text:(NSString*)text{
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, widht, 0)];
+    textView.text = text;
+    textView.font = font;
+    CGSize size = CGSizeMake(widht, MAXFLOAT);
+    CGSize constraint = [textView sizeThatFits:size];
+    return constraint.height;
+}
+- (CGFloat)widthLineFeedWithFont:(UIFont*)font textSizeHeight:(CGFloat)height text:(NSString*)text{
+    UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, 0, height)];
+    textView.text = text;
+    textView.font = font;
+    CGSize size = CGSizeMake(MAXFLOAT, height);
+    CGSize constraint = [textView sizeThatFits:size];
+    return constraint.width;
+}
 /*
 #pragma mark - Navigation
 

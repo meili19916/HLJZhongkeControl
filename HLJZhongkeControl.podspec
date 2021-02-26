@@ -39,4 +39,5 @@ Pod::Spec.new do |s|
 s.dependency 'CocoaAsyncSocket', '~> 7.6.5'
 s.dependency 'AFNetworking'
 s.dependency 'Toast'
+s.dependency  'MQTTClient'
 end

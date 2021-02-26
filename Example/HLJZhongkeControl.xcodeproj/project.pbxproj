@@ -40,10 +40,36 @@
 		843443A225E3923F005F5B0E /* 我的-icon_kf@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443A025E3923F005F5B0E /* 我的-icon_kf@3x.png */; };
 		843443A325E3923F005F5B0E /* 我的-icon_sz@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443A125E3923F005F5B0E /* 我的-icon_sz@3x.png */; };
 		843443A725E39361005F5B0E /* icon_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443A625E39361005F5B0E /* icon_right.png */; };
-		843443AD25E39784005F5B0E /* icon_dia.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443AC25E39784005F5B0E /* icon_dia.png */; };
 		843443B525E39BB9005F5B0E /* kg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443B425E39BB9005F5B0E /* kg@3x.png */; };
 		843443BB25E3A2B2005F5B0E /* j@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443BA25E3A2B2005F5B0E /* j@3x.png */; };
 		843443BF25E3A2B8005F5B0E /* jian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443BE25E3A2B8005F5B0E /* jian@3x.png */; };
+		843443DA25E49BE3005F5B0E /* 路径@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443D925E49BE3005F5B0E /* 路径@2x.png */; };
+		843443EA25E4EB64005F5B0E /* 三角形@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843443E925E4EB64005F5B0E /* 三角形@2x.png */; };
+		843443FD25E63360005F5B0E /* HLJTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843443FB25E6335F005F5B0E /* HLJTabViewController.m */; };
+		843443FE25E63360005F5B0E /* HLJTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843443FC25E6335F005F5B0E /* HLJTabViewController.xib */; };
+		8434440725E63593005F5B0E /* HLJMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434440525E63593005F5B0E /* HLJMainViewController.m */; };
+		8434440825E63593005F5B0E /* HLJMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8434440625E63593005F5B0E /* HLJMainViewController.xib */; };
+		8434441825E781DD005F5B0E /* HLJLedControllManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434441725E781DD005F5B0E /* HLJLedControllManager.m */; };
+		8434442125E798E7005F5B0E /* HLJNotifyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434441F25E798E7005F5B0E /* HLJNotifyCollectionViewCell.m */; };
+		8434442225E798E7005F5B0E /* HLJNotifyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8434442025E798E7005F5B0E /* HLJNotifyCollectionViewCell.xib */; };
+		8434442B25E898B2005F5B0E /* HLJDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434442925E898B2005F5B0E /* HLJDeviceViewController.m */; };
+		8434442C25E898B2005F5B0E /* HLJDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8434442A25E898B2005F5B0E /* HLJDeviceViewController.xib */; };
+		8434443425E89A8D005F5B0E /* HLJDeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434443225E89A8D005F5B0E /* HLJDeviceTableViewCell.m */; };
+		8434443525E89A8D005F5B0E /* HLJDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8434443325E89A8D005F5B0E /* HLJDeviceTableViewCell.xib */; };
+		8434444425E89EEF005F5B0E /* icon_sbmr@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434443825E89EEE005F5B0E /* icon_sbmr@3x.png */; };
+		8434444525E89EEF005F5B0E /* icon_cxbf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434443925E89EEE005F5B0E /* icon_cxbf@2x.png */; };
+		8434444625E89EEF005F5B0E /* icon_jx@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434443A25E89EEE005F5B0E /* icon_jx@3x.png */; };
+		8434444725E89EEF005F5B0E /* icon_zt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434443B25E89EEE005F5B0E /* icon_zt@3x.png */; };
+		8434444825E89EEF005F5B0E /* icon_cxbf@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434443C25E89EEE005F5B0E /* icon_cxbf@3x.png */; };
+		8434444925E89EEF005F5B0E /* icon_fskz@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434443D25E89EEE005F5B0E /* icon_fskz@3x.png */; };
+		8434444A25E89EEF005F5B0E /* icon_jx@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434443E25E89EEF005F5B0E /* icon_jx@2x.png */; };
+		8434444B25E89EEF005F5B0E /* icon_sbmr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434443F25E89EEF005F5B0E /* icon_sbmr@2x.png */; };
+		8434444C25E89EEF005F5B0E /* icon_yl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434444025E89EEF005F5B0E /* icon_yl@2x.png */; };
+		8434444D25E89EEF005F5B0E /* icon_yl@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434444125E89EEF005F5B0E /* icon_yl@3x.png */; };
+		8434444E25E89EEF005F5B0E /* icon_zt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434444225E89EEF005F5B0E /* icon_zt@2x.png */; };
+		8434444F25E89EEF005F5B0E /* icon_fskz@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8434444325E89EEF005F5B0E /* icon_fskz@2x.png */; };
+		8434448E25E8D1A5005F5B0E /* MQTTPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434448A25E8D1A5005F5B0E /* MQTTPackage.m */; };
+		8434448F25E8D1A5005F5B0E /* MQTTClientModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434448B25E8D1A5005F5B0E /* MQTTClientModel.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		969BDEC0FF5F9E3E9F9822C0 /* Pods_HLJZhongkeControl_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA770CFCD0A29AF20EA2B99A /* Pods_HLJZhongkeControl_Example.framework */; };
 /* End PBXBuildFile section */
@@ -110,10 +136,45 @@
 		843443A025E3923F005F5B0E /* 我的-icon_kf@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的-icon_kf@3x.png"; sourceTree = "<group>"; };
 		843443A125E3923F005F5B0E /* 我的-icon_sz@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的-icon_sz@3x.png"; sourceTree = "<group>"; };
 		843443A625E39361005F5B0E /* icon_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_right.png; sourceTree = "<group>"; };
-		843443AC25E39784005F5B0E /* icon_dia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_dia.png; sourceTree = "<group>"; };
 		843443B425E39BB9005F5B0E /* kg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kg@3x.png"; path = "../../../../Downloads/启动/kg@3x.png"; sourceTree = "<group>"; };
 		843443BA25E3A2B2005F5B0E /* j@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j@3x.png"; sourceTree = "<group>"; };
 		843443BE25E3A2B8005F5B0E /* jian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jian@3x.png"; sourceTree = "<group>"; };
+		843443D925E49BE3005F5B0E /* 路径@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路径@2x.png"; sourceTree = "<group>"; };
+		843443E925E4EB64005F5B0E /* 三角形@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "三角形@2x.png"; sourceTree = "<group>"; };
+		843443FA25E6335F005F5B0E /* HLJTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJTabViewController.h; sourceTree = "<group>"; };
+		843443FB25E6335F005F5B0E /* HLJTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJTabViewController.m; sourceTree = "<group>"; };
+		843443FC25E6335F005F5B0E /* HLJTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLJTabViewController.xib; sourceTree = "<group>"; };
+		8434440425E63593005F5B0E /* HLJMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJMainViewController.h; sourceTree = "<group>"; };
+		8434440525E63593005F5B0E /* HLJMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJMainViewController.m; sourceTree = "<group>"; };
+		8434440625E63593005F5B0E /* HLJMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLJMainViewController.xib; sourceTree = "<group>"; };
+		8434441625E781DD005F5B0E /* HLJLedControllManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJLedControllManager.h; sourceTree = "<group>"; };
+		8434441725E781DD005F5B0E /* HLJLedControllManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJLedControllManager.m; sourceTree = "<group>"; };
+		8434441E25E798E7005F5B0E /* HLJNotifyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJNotifyCollectionViewCell.h; sourceTree = "<group>"; };
+		8434441F25E798E7005F5B0E /* HLJNotifyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJNotifyCollectionViewCell.m; sourceTree = "<group>"; };
+		8434442025E798E7005F5B0E /* HLJNotifyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLJNotifyCollectionViewCell.xib; sourceTree = "<group>"; };
+		8434442825E898B2005F5B0E /* HLJDeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJDeviceViewController.h; sourceTree = "<group>"; };
+		8434442925E898B2005F5B0E /* HLJDeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJDeviceViewController.m; sourceTree = "<group>"; };
+		8434442A25E898B2005F5B0E /* HLJDeviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLJDeviceViewController.xib; sourceTree = "<group>"; };
+		8434443125E89A8D005F5B0E /* HLJDeviceTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJDeviceTableViewCell.h; sourceTree = "<group>"; };
+		8434443225E89A8D005F5B0E /* HLJDeviceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJDeviceTableViewCell.m; sourceTree = "<group>"; };
+		8434443325E89A8D005F5B0E /* HLJDeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLJDeviceTableViewCell.xib; sourceTree = "<group>"; };
+		8434443825E89EEE005F5B0E /* icon_sbmr@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_sbmr@3x.png"; sourceTree = "<group>"; };
+		8434443925E89EEE005F5B0E /* icon_cxbf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_cxbf@2x.png"; sourceTree = "<group>"; };
+		8434443A25E89EEE005F5B0E /* icon_jx@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_jx@3x.png"; sourceTree = "<group>"; };
+		8434443B25E89EEE005F5B0E /* icon_zt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_zt@3x.png"; sourceTree = "<group>"; };
+		8434443C25E89EEE005F5B0E /* icon_cxbf@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_cxbf@3x.png"; sourceTree = "<group>"; };
+		8434443D25E89EEE005F5B0E /* icon_fskz@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_fskz@3x.png"; sourceTree = "<group>"; };
+		8434443E25E89EEF005F5B0E /* icon_jx@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_jx@2x.png"; sourceTree = "<group>"; };
+		8434443F25E89EEF005F5B0E /* icon_sbmr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_sbmr@2x.png"; sourceTree = "<group>"; };
+		8434444025E89EEF005F5B0E /* icon_yl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_yl@2x.png"; sourceTree = "<group>"; };
+		8434444125E89EEF005F5B0E /* icon_yl@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_yl@3x.png"; sourceTree = "<group>"; };
+		8434444225E89EEF005F5B0E /* icon_zt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_zt@2x.png"; sourceTree = "<group>"; };
+		8434444325E89EEF005F5B0E /* icon_fskz@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_fskz@2x.png"; sourceTree = "<group>"; };
+		8434448925E8D1A4005F5B0E /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		8434448A25E8D1A5005F5B0E /* MQTTPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTPackage.m; sourceTree = "<group>"; };
+		8434448B25E8D1A5005F5B0E /* MQTTClientModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTTClientModel.m; sourceTree = "<group>"; };
+		8434448C25E8D1A5005F5B0E /* MQTTClientModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTClientModel.h; sourceTree = "<group>"; };
+		8434448D25E8D1A5005F5B0E /* MQTTPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTPackage.h; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BF63268E6D66B39E3E4DCDA /* Pods-HLJZhongkeControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJZhongkeControl_Example.debug.xcconfig"; path = "Target Support Files/Pods-HLJZhongkeControl_Example/Pods-HLJZhongkeControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E8E9AD1CA2740D3DE05EA7 /* HLJZhongkeControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HLJZhongkeControl.podspec; path = ../HLJZhongkeControl.podspec; sourceTree = "<group>"; };
@@ -254,6 +315,20 @@
 		8434433C25E38D5E005F5B0E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8434443925E89EEE005F5B0E /* icon_cxbf@2x.png */,
+				8434443C25E89EEE005F5B0E /* icon_cxbf@3x.png */,
+				8434444325E89EEF005F5B0E /* icon_fskz@2x.png */,
+				8434443D25E89EEE005F5B0E /* icon_fskz@3x.png */,
+				8434443E25E89EEF005F5B0E /* icon_jx@2x.png */,
+				8434443A25E89EEE005F5B0E /* icon_jx@3x.png */,
+				8434443F25E89EEF005F5B0E /* icon_sbmr@2x.png */,
+				8434443825E89EEE005F5B0E /* icon_sbmr@3x.png */,
+				8434444025E89EEF005F5B0E /* icon_yl@2x.png */,
+				8434444125E89EEF005F5B0E /* icon_yl@3x.png */,
+				8434444225E89EEF005F5B0E /* icon_zt@2x.png */,
+				8434443B25E89EEE005F5B0E /* icon_zt@3x.png */,
+				843443E925E4EB64005F5B0E /* 三角形@2x.png */,
+				843443D925E49BE3005F5B0E /* 路径@2x.png */,
 				843443BE25E3A2B8005F5B0E /* jian@3x.png */,
 				843443BA25E3A2B2005F5B0E /* j@3x.png */,
 				843443A625E39361005F5B0E /* icon_right.png */,
@@ -263,7 +338,6 @@
 				8434439025E39206005F5B0E /* jr@3x.png */,
 				843443A025E3923F005F5B0E /* 我的-icon_kf@3x.png */,
 				843443A125E3923F005F5B0E /* 我的-icon_sz@3x.png */,
-				843443AC25E39784005F5B0E /* icon_dia.png */,
 				8434438425E3918D005F5B0E /* icon_back.png */,
 				8434438025E39171005F5B0E /* icon_shouye.png */,
 				8434437C25E3915F005F5B0E /* icon_caidan.png */,
@@ -280,6 +354,7 @@
 		8434433E25E38D5E005F5B0E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8434448825E8D18F005F5B0E /* MQTT */,
 				8434433F25E38D5E005F5B0E /* HLJZhongkeControl.h */,
 				8434434025E38D5E005F5B0E /* .gitkeep */,
 				8434434125E38D5E005F5B0E /* VC */,
@@ -291,6 +366,10 @@
 		8434434125E38D5E005F5B0E /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				8434442725E89899005F5B0E /* Device */,
+				8434441525E781B7005F5B0E /* LedControllManager */,
+				8434440325E63583005F5B0E /* Main */,
+				843443F925E632DE005F5B0E /* Tab */,
 				8434436225E3901A005F5B0E /* RemoteControl */,
 				8434435625E38ECA005F5B0E /* BaseVC */,
 				8434434625E38D68005F5B0E /* LoginPage */,
@@ -336,6 +415,71 @@
 				8434436525E39074005F5B0E /* HLJRemoteControlViewController.xib */,
 			);
 			path = RemoteControl;
+			sourceTree = "<group>";
+		};
+		843443F925E632DE005F5B0E /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				843443FA25E6335F005F5B0E /* HLJTabViewController.h */,
+				843443FB25E6335F005F5B0E /* HLJTabViewController.m */,
+				843443FC25E6335F005F5B0E /* HLJTabViewController.xib */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		8434440325E63583005F5B0E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8434441D25E798B5005F5B0E /* Cell */,
+				8434440425E63593005F5B0E /* HLJMainViewController.h */,
+				8434440525E63593005F5B0E /* HLJMainViewController.m */,
+				8434440625E63593005F5B0E /* HLJMainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8434441525E781B7005F5B0E /* LedControllManager */ = {
+			isa = PBXGroup;
+			children = (
+				8434441625E781DD005F5B0E /* HLJLedControllManager.h */,
+				8434441725E781DD005F5B0E /* HLJLedControllManager.m */,
+			);
+			path = LedControllManager;
+			sourceTree = "<group>";
+		};
+		8434441D25E798B5005F5B0E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8434441E25E798E7005F5B0E /* HLJNotifyCollectionViewCell.h */,
+				8434441F25E798E7005F5B0E /* HLJNotifyCollectionViewCell.m */,
+				8434442025E798E7005F5B0E /* HLJNotifyCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8434442725E89899005F5B0E /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				8434442825E898B2005F5B0E /* HLJDeviceViewController.h */,
+				8434442925E898B2005F5B0E /* HLJDeviceViewController.m */,
+				8434442A25E898B2005F5B0E /* HLJDeviceViewController.xib */,
+				8434443125E89A8D005F5B0E /* HLJDeviceTableViewCell.h */,
+				8434443225E89A8D005F5B0E /* HLJDeviceTableViewCell.m */,
+				8434443325E89A8D005F5B0E /* HLJDeviceTableViewCell.xib */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		8434448825E8D18F005F5B0E /* MQTT */ = {
+			isa = PBXGroup;
+			children = (
+				8434448C25E8D1A5005F5B0E /* MQTTClientModel.h */,
+				8434448B25E8D1A5005F5B0E /* MQTTClientModel.m */,
+				8434448D25E8D1A5005F5B0E /* MQTTPackage.h */,
+				8434448A25E8D1A5005F5B0E /* MQTTPackage.m */,
+				8434448925E8D1A4005F5B0E /* Service.h */,
+			);
+			path = MQTT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +534,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = meili19916;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = T6C74T9A7J;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -421,28 +568,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				8434437D25E3915F005F5B0E /* icon_caidan.png in Resources */,
+				8434444525E89EEF005F5B0E /* icon_cxbf@2x.png in Resources */,
 				8434438125E39171005F5B0E /* icon_shouye.png in Resources */,
+				8434444725E89EEF005F5B0E /* icon_zt@3x.png in Resources */,
 				8434439D25E3921E005F5B0E /* xia@3x.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				8434444925E89EEF005F5B0E /* icon_fskz@3x.png in Resources */,
 				843443A725E39361005F5B0E /* icon_right.png in Resources */,
 				8434439925E39213005F5B0E /* shang@3x.png in Resources */,
+				8434444E25E89EEF005F5B0E /* icon_zt@2x.png in Resources */,
 				843443BB25E3A2B2005F5B0E /* j@3x.png in Resources */,
 				8434439125E39206005F5B0E /* jr@3x.png in Resources */,
+				8434444425E89EEF005F5B0E /* icon_sbmr@3x.png in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				8434444A25E89EEF005F5B0E /* icon_jx@2x.png in Resources */,
+				8434442C25E898B2005F5B0E /* HLJDeviceViewController.xib in Resources */,
+				843443DA25E49BE3005F5B0E /* 路径@2x.png in Resources */,
+				8434440825E63593005F5B0E /* HLJMainViewController.xib in Resources */,
 				843443A325E3923F005F5B0E /* 我的-icon_sz@3x.png in Resources */,
 				843443BF25E3A2B8005F5B0E /* jian@3x.png in Resources */,
+				8434443525E89A8D005F5B0E /* HLJDeviceTableViewCell.xib in Resources */,
+				8434444D25E89EEF005F5B0E /* icon_yl@3x.png in Resources */,
 				8434438525E3918D005F5B0E /* icon_back.png in Resources */,
 				843443B525E39BB9005F5B0E /* kg@3x.png in Resources */,
 				8434436D25E39105005F5B0E /* icon_home.png in Resources */,
 				8434434B25E38D80005F5B0E /* HLJLoginPageViewController.xib in Resources */,
-				843443AD25E39784005F5B0E /* icon_dia.png in Resources */,
+				8434444F25E89EEF005F5B0E /* icon_fskz@2x.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				8434444825E89EEF005F5B0E /* icon_cxbf@3x.png in Resources */,
+				8434444625E89EEF005F5B0E /* icon_jx@3x.png in Resources */,
+				843443EA25E4EB64005F5B0E /* 三角形@2x.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				8434437125E39125005F5B0E /* icon_background.png in Resources */,
 				8434437525E39136005F5B0E /* icon_person.png in Resources */,
 				8434437925E39149005F5B0E /* icon_shebei.png in Resources */,
 				843443A225E3923F005F5B0E /* 我的-icon_kf@3x.png in Resources */,
 				8434436725E39074005F5B0E /* HLJRemoteControlViewController.xib in Resources */,
+				8434442225E798E7005F5B0E /* HLJNotifyCollectionViewCell.xib in Resources */,
+				843443FE25E63360005F5B0E /* HLJTabViewController.xib in Resources */,
+				8434444C25E89EEF005F5B0E /* icon_yl@2x.png in Resources */,
+				8434444B25E89EEF005F5B0E /* icon_sbmr@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,9 +715,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843443FD25E63360005F5B0E /* HLJTabViewController.m in Sources */,
 				6003F59E195388D20070C39A /* HLJAppDelegate.m in Sources */,
+				8434442125E798E7005F5B0E /* HLJNotifyCollectionViewCell.m in Sources */,
 				6003F5A7195388D20070C39A /* HLJViewController.m in Sources */,
+				8434443425E89A8D005F5B0E /* HLJDeviceTableViewCell.m in Sources */,
+				8434448E25E8D1A5005F5B0E /* MQTTPackage.m in Sources */,
+				8434448F25E8D1A5005F5B0E /* MQTTClientModel.m in Sources */,
 				8434436625E39074005F5B0E /* HLJRemoteControlViewController.m in Sources */,
+				8434441825E781DD005F5B0E /* HLJLedControllManager.m in Sources */,
+				8434440725E63593005F5B0E /* HLJMainViewController.m in Sources */,
+				8434442B25E898B2005F5B0E /* HLJDeviceViewController.m in Sources */,
 				8434434A25E38D80005F5B0E /* HLJLoginPageViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				8434435A25E38EDD005F5B0E /* HLJBaseViewController.m in Sources */,
@@ -683,6 +856,7 @@
 			baseConfigurationReference = 8BF63268E6D66B39E3E4DCDA /* Pods-HLJZhongkeControl_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T6C74T9A7J;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HLJZhongkeControl/HLJZhongkeControl-Prefix.pch";
 				INFOPLIST_FILE = "HLJZhongkeControl/HLJZhongkeControl-Info.plist";
@@ -700,6 +874,7 @@
 			baseConfigurationReference = 0927372CDF032FCCDD5C042D /* Pods-HLJZhongkeControl_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T6C74T9A7J;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HLJZhongkeControl/HLJZhongkeControl-Prefix.pch";
 				INFOPLIST_FILE = "HLJZhongkeControl/HLJZhongkeControl-Info.plist";

@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HLJBaseViewController : UIViewController
 
+- (CGFloat)sizeLineFeedWithFont:(CGFloat)fontSize textSizeWidht:(CGFloat)widht text:(NSString*)text;
+- (CGFloat)heightLineFeedWithFont:(UIFont*)font textSizeWidht:(CGFloat)widht text:(NSString*)text;
+- (CGFloat)widthLineFeedWithFont:(UIFont*)font textSizeHeight:(CGFloat)height text:(NSString*)text;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,7 +7,7 @@
 //
 
 #import "HLJViewController.h"
-
+#import "HLJZhongkeControl.h"
 @interface HLJViewController ()
 
 @end
@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)pushToVC:(id)sender {
+    [self.navigationController pushViewController:[HLJTabViewController new] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
