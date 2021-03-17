@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLJLoginPageViewController">
             <connections>
+                <outlet property="phoneTextField" destination="gce-aR-Mgv" id="bfr-m1-cgt"/>
+                <outlet property="smsTextField" destination="5pe-Bg-5lo" id="U3e-Ay-DGe"/>
+                <outlet property="verificationButton" destination="NKY-QR-fM7" id="VBS-ej-nqA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -65,6 +68,9 @@
                             <state key="normal" title="获取验证码">
                                 <color key="titleColor" red="0.29413461689999998" green="0.4064949155" blue="0.67848241330000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <connections>
+                                <action selector="getVerifycationButtonClicked:" destination="-1" eventType="touchUpInside" id="oUI-gi-U3K"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.96471232179999999" green="0.96469432119999998" blue="0.96470648049999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -99,6 +105,9 @@
                             <integer key="value" value="5"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="loginButtonClicked:" destination="-1" eventType="touchUpInside" id="Lyp-2A-bag"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录即同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH0-Ix-vtY">
                     <rect key="frame" x="33" y="313" width="56.5" height="13.5"/>

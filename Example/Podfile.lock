@@ -20,11 +20,22 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HLJZhongkeControl (0.1.4):
+  - HLJZhongkeControl (0.1.7):
     - AFNetworking
     - CocoaAsyncSocket (~> 7.6.5)
+    - MQTTClient
     - Toast
+    - YYModel
+  - MQTTClient (0.15.3):
+    - MQTTClient/Core (= 0.15.3)
+  - MQTTClient/Core (0.15.3):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.15.3):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.15.3)
   - Toast (4.0.0)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -35,7 +46,9 @@ SPEC REPOS:
     - AFNetworking
     - CocoaAsyncSocket
     - FBSnapshotTestCase
+    - MQTTClient
     - Toast
+    - YYModel
 
 EXTERNAL SOURCES:
   HLJZhongkeControl:
@@ -45,9 +58,11 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HLJZhongkeControl: 8965398e122a280bc6e3ec9f1a8ff19b9ae0b03b
+  HLJZhongkeControl: 40b113fc8b5f57561a56b3cb6afa19c291f5f3ec
+  MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: da835d9931f2852c55aa5b8fc85c7f933574ef9a
+PODFILE CHECKSUM: eb0c4a440f13d89392b7031605c9c349ece8fc3e
 
 COCOAPODS: 1.10.1

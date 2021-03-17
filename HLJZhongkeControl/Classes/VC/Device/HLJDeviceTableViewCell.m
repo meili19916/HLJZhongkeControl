@@ -17,7 +17,7 @@
 -(void)setFrame:(CGRect)frame
 {
     frame.origin.x = 5;//这里间距为10，可以根据自己的情况调整
-    frame.origin.y = 10;
+//    frame.origin.y = 10;
     frame.size.width -= 10;
     frame.size.height -= 10;
     [super setFrame:frame];
@@ -29,23 +29,24 @@
 }
 - (IBAction)startButtonClicked:(id)sender {
     if (self.startBlock) {
-        self.startBlock(nil);
+        self.startBlock(@"");
     }
 }
 - (IBAction)replayButtonClicked:(id)sender {
     if (self.replayBlock) {
-        self.replayBlock(nil);
+        self.replayBlock(@"");
     }
 }
 - (IBAction)remoteButtonClicked:(id)sender {
     if (self.controllBlock) {
-        self.controllBlock(nil);
+        self.controllBlock(@"");
     }
 }
 - (IBAction)sliderValueChanged:(UISlider*)sender {
     if (self.controllBlock) {
         self.controllBlock(@(sender.value));
     }
+    self.volomLabel.text = [NSString stringWithFormat:@"%.f%%",sender.value];
 }
 
 @end

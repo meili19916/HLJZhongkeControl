@@ -20,7 +20,7 @@
                         @"CE D2 B0 AE D6 D0 BA BD C8 ED BC FE ",
                         @"45 8C ",
                         @"A5"]];
-        client.controlSocket = [[GCDAsyncSocket alloc]initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+        client.controlSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     });
     return client;
 }

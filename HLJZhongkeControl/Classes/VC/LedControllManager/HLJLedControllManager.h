@@ -16,7 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) GCDAsyncSocket *controlSocket;
 
 +(HLJLedControllManager *)shared;
-
+- (void)openLed;
+-(void)closeLed;
+- (void)sendLed:(NSString *)text;
 @end
 
 NS_ASSUME_NONNULL_END

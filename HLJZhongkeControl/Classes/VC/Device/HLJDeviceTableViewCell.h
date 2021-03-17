@@ -16,6 +16,8 @@ typedef void (^HLJCommonBlock)(id blockData);
 @property (nonatomic,copy) HLJCommonBlock replayBlock;
 @property (nonatomic,copy) HLJCommonBlock controllBlock;
 @property (nonatomic,copy) HLJCommonBlock voiceChangedBlock;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *volomLabel;
 
 @end
 

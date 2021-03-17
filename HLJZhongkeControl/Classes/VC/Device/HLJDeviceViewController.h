@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HLJDeviceViewController : UIViewController
+@property (nonatomic,strong) NSString *deviceCode;
 
 @end
 

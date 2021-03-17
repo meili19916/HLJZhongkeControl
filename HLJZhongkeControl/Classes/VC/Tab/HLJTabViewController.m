@@ -9,9 +9,10 @@
 #import "HLJTabViewController.h"
 #import "HLJMainViewController.h"
 #import "HLJDeviceViewController.h"
-#import "MQTTClientModel.h"
-
-@interface HLJTabViewController ()<UITabBarControllerDelegate,MQTTClientModelDelegate>
+#import "HLJMineViewController.h"
+#import "HLJHttp.h"
+#import "HLJLoginPageViewController.h"
+@interface HLJTabViewController ()<UITabBarControllerDelegate,HLJHttpDelegate>
 
 @end
 
@@ -21,19 +22,31 @@
     [super viewDidLoad];
     self.delegate = self;
     [self addChildViewControllers];
+    [HLJHttp shared].delegate = self;
+    if ([HLJHttp shared].user.token.length == 0) {
+        [self pushToLoginView];
+    }
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)initMQTT{
-    [[MQTTClientModel sharedInstance] bindWithUserName:@"eh12sz3/innovation" password:@"qxCJBmqN1Yq3EjC1" cliendId:[NSUUID UUID].UUIDString isSSL:NO];
-    [[MQTTClientModel sharedInstance] subscribeTopic:@"innovation"];
-    [MQTTClientModel sharedInstance].delegate = self;
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
 }
+
+-(void)pushToLoginView{
+    if ([self.navigationController.viewControllers.lastObject isKindOfClass:[HLJLoginPageViewController class]]) {
+        return;
+    }
+    [self.navigationController pushViewController:[HLJLoginPageViewController new] animated:YES];
+}
+
+
 - (void)addChildViewControllers{
     //图片大小建议32*32
-    [self addChildrenViewController:[HLJMainViewController new] andTitle:@"首页" andImageName:@"icon_sy_def" andSelectImage:@"icon_sy_pre"];
-    [self addChildrenViewController:[HLJDeviceViewController new] andTitle:@"设备" andImageName:@"icon_gzt_def" andSelectImage:@"icon_gzt_pre"];
-    [self addChildrenViewController:[UIViewController new] andTitle:@"我的" andImageName:@"icon_wd_def" andSelectImage:@"icon_wd_pre"];
+    [self addChildrenViewController:[HLJMainViewController new] andTitle:@"首页" andImageName:@"icon_sy_df" andSelectImage:@"icon_sy_pre"];
+    [self addChildrenViewController:[HLJDeviceViewController new] andTitle:@"设备" andImageName:@"icon_sb_df" andSelectImage:@"icon_sb_pre"];
+    [self addChildrenViewController:[HLJMineViewController new] andTitle:@"我的" andImageName:@"icon_wd_df" andSelectImage:@"icon_wd_wd"];
 }
 
 - (void)addChildrenViewController:(UIViewController *)childVC andTitle:(NSString *)title andImageName:(NSString *)imageName andSelectImage:(NSString *)selectedImage{
@@ -44,8 +57,6 @@
     iconImageSel = [iconImageSel imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     childVC.tabBarItem.selectedImage =  iconImageSel;
     childVC.title = title;
-    
-    
     [self addChildViewController:childVC];
 }
 /*

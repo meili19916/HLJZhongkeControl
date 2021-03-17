@@ -93,7 +93,7 @@
                             <action selector="startButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yj2-Wg-IBL"/>
                         </connections>
                     </button>
-                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zkS-Nm-QS1">
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zkS-Nm-QS1">
                         <rect key="frame" x="54" y="186.5" width="209" height="34"/>
                         <connections>
                             <action selector="sliderValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="jG2-ds-abs"/>
@@ -141,7 +141,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="nameLabel" destination="HdC-pp-rtG" id="l9v-Ku-ZNQ"/>
                 <outlet property="slider" destination="zkS-Nm-QS1" id="pNF-fd-ZWP"/>
+                <outlet property="volomLabel" destination="Frw-TV-9cb" id="j5e-pI-cPb"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="160.04464285714286"/>
         </tableViewCell>

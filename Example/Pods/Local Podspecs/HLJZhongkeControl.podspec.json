@@ -1,6 +1,6 @@
 {
   "name": "HLJZhongkeControl",
-  "version": "0.1.4",
+  "version": "0.1.8",
   "summary": "A short description of HLJZhongkeControl.",
   "description": "SDK",
   "homepage": "https://github.com/meili19916/HLJZhongkeControl",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/meili19916/HLJZhongkeControl.git",
-    "tag": "0.1.4"
+    "tag": "0.1.8"
   },
   "platforms": {
     "ios": "11.0"
@@ -35,6 +35,12 @@
 
     ],
     "MQTTClient": [
+
+    ],
+    "YYModel": [
+
+    ],
+    "SDWebImage": [
 
     ]
   }

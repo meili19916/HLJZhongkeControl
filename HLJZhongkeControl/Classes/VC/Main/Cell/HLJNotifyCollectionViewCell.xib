@@ -11,15 +11,15 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HLJNotifyCollectionViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="234" height="141"/>
+            <rect key="frame" x="0.0" y="0.0" width="234" height="186"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="234" height="141"/>
+                <rect key="frame" x="0.0" y="0.0" width="234" height="186"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAo-IH-wBh">
                         <rect key="frame" x="12" y="56" width="44" height="44"/>
-                        <color key="backgroundColor" red="0.66364389660000001" green="0.80037826300000003" blue="0.28212454920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="PAo-IH-wBh" secondAttribute="height" multiplier="1:1" id="4DQ-d3-CIF"/>
                             <constraint firstAttribute="width" constant="44" id="FPT-Ym-vkx"/>
@@ -73,7 +73,7 @@
                 <constraint firstItem="41g-mF-RNP" firstAttribute="top" secondItem="N3E-Sp-q5R" secondAttribute="bottom" constant="7" id="vXe-ID-8y2"/>
                 <constraint firstItem="Y9R-TS-PuY" firstAttribute="leading" secondItem="idc-f5-cDy" secondAttribute="trailing" constant="21" id="yRw-U0-LT4"/>
             </constraints>
-            <size key="customSize" width="234" height="141"/>
+            <size key="customSize" width="234" height="186"/>
             <connections>
                 <outlet property="contentImageView" destination="PAo-IH-wBh" id="o1n-qb-hyo"/>
                 <outlet property="lab1Label" destination="41g-mF-RNP" id="Fgj-vE-eUX"/>
@@ -82,7 +82,7 @@
                 <outlet property="lab4Label" destination="Wpo-wh-XFe" id="a2i-mq-LYO"/>
                 <outlet property="titleLabel" destination="N3E-Sp-q5R" id="exq-q9-F3p"/>
             </connections>
-            <point key="canvasLocation" x="269.56521739130437" y="126.89732142857142"/>
+            <point key="canvasLocation" x="269.56521739130437" y="141.96428571428569"/>
         </collectionViewCell>
     </objects>
 </document>

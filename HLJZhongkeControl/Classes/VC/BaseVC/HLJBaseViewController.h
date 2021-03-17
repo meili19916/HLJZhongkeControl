@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIView+Toast.h"
 NS_ASSUME_NONNULL_BEGIN
+typedef void (^HLJCommonBlock)(id blockData);
 
 @interface HLJBaseViewController : UIViewController
 

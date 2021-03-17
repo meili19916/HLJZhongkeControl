@@ -7,11 +7,12 @@
 //
 
 #import "HLJBaseViewController.h"
+#import "HLJHttp.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HLJMainViewController :HLJBaseViewController
-
+- (void)postMQTTMessage:(UUIDModel*)model;
 @end
 
 NS_ASSUME_NONNULL_END

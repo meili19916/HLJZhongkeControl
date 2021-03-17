@@ -7,8 +7,7 @@
 //
 
 #import "MQTTClientModel.h"
-#import "WifiManager.h"
-@interface MQTTClientModel () <MQTTSessionManagerDelegate,WifiManagerDelegate>
+@interface MQTTClientModel () <MQTTSessionManagerDelegate>
 
 @property (nonatomic,strong) MQTTCFSocketTransport *myTransport;
 
@@ -29,7 +28,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         user = [[MQTTClientModel alloc]init];
-        [WifiManagerInstance addDelegate:user];
         
     });
     return user;
@@ -67,16 +65,16 @@
 }
 
 #pragma mark - WifiManagerDelegate
-- (void)manager:(WifiManager *)manager reachabilityChanged:(NetworkStatus)status {
-    if (status == NotReachable) {
-        [self disconnect];
-#warning 网络改变所以设备离线
-    }
-    else if (self.mySessionManager.state != MQTTSessionManagerStateConnected) {
-        [self reConnect];
-    }
-    
-}
+//- (void)manager:(WifiManager *)manager reachabilityChanged:(NetworkStatus)status {
+//    if (status == NotReachable) {
+//        [self disconnect];
+//#warning 网络改变所以设备离线
+//    }
+//    else if (self.mySessionManager.state != MQTTSessionManagerStateConnected) {
+//        [self reConnect];
+//    }
+//
+//}
 
 #pragma mark - 绑定
 - (void)bindWithUserName:(NSString *)username password:(NSString *)password cliendId:(NSString *)cliendId isSSL:(BOOL)isSSL{
@@ -160,7 +158,7 @@
             break;
         case MQTTSessionManagerStateStarting:
             if ([self.delegate respondsToSelector:@selector(connectStatus:)]) {
-                [self.delegate connectStatus:@"连接开"];
+                [self.delegate connectStatus:@"连接开始"];
             }
             NSLog(@"eventCode -- 连接开始");
             

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HLJZhongkeControl'
-  s.version          = '0.1.4'
+  s.version          = '0.1.8'
   s.summary          = 'A short description of HLJZhongkeControl.'
 
 # This description is used to generate tags and improve search results.
@@ -40,4 +40,6 @@ s.dependency 'CocoaAsyncSocket', '~> 7.6.5'
 s.dependency 'AFNetworking'
 s.dependency 'Toast'
 s.dependency  'MQTTClient'
+s.dependency 'YYModel'
+s.dependency 'SDWebImage'
 end
