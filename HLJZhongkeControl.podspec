@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.source_files = 'HLJZhongkeControl/Classes/**/*'
   
  s.resource_bundles = {
-   'HLJZhongkeControl' => ['HLJZhongkeControl/Assets/*.png']
+   'HLJZhongkeControl' => ['HLJZhongkeControl/Assets/**/*.png']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
@@ -41,5 +41,5 @@ s.dependency 'AFNetworking'
 s.dependency 'Toast'
 s.dependency  'MQTTClient'
 s.dependency 'YYModel'
-s.dependency 'SDWebImage', '~> 5.0'
+#s.dependency 'SDWebImage', '~> 5.0'
 end

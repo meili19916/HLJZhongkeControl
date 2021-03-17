@@ -346,10 +346,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		246B9925C2A915C43B0C835F5DAF38D2 /* Pods_HLJZhongkeControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLJZhongkeControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26402AF753BFC7D8AB112BA9AC33C327 /* HLJZhongkeControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HLJZhongkeControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		34AC80D7E12DF503EDE347EFA73CA002 /* Pods_HLJZhongkeControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLJZhongkeControl_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46EB2E00000120 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		246B9925C2A915C43B0C835F5DAF38D2 /* Pods_HLJZhongkeControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HLJZhongkeControl_Example.framework; path = "Pods-HLJZhongkeControl_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26402AF753BFC7D8AB112BA9AC33C327 /* HLJZhongkeControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HLJZhongkeControl.framework; path = HLJZhongkeControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34AC80D7E12DF503EDE347EFA73CA002 /* Pods_HLJZhongkeControl_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HLJZhongkeControl_Tests.framework; path = "Pods-HLJZhongkeControl_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EB2E00000120 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E00000130 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		46EB2E00000150 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		46EB2E00000160 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
@@ -545,9 +545,9 @@
 		46EB2E00000EE0 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		46EB2E00000EF0 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		46EB2E00000F10 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
-		46EB2E00000F30 /* HLJZhongkeControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HLJZhongkeControl.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		46EB2E00000F40 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		46EB2E00000F50 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46EB2E00000F30 /* HLJZhongkeControl.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HLJZhongkeControl.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00000F40 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		46EB2E00000F50 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		46EB2E00001000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46EB2E00001240 /* AFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.debug.xcconfig; sourceTree = "<group>"; };
 		46EB2E00001250 /* AFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.release.xcconfig; sourceTree = "<group>"; };
@@ -628,13 +628,13 @@
 		46EB2E00002A60 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EB2E00002AA0 /* MQTTClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQTTClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EB2E00002AE0 /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97924DEE14B971A9ABE3B7E650741B70 /* HLJZhongkeControl.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLJZhongkeControl.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0E79AD53820186F5DE86726D150F447 /* MQTTClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQTTClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast.framework; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97924DEE14B971A9ABE3B7E650741B70 /* HLJZhongkeControl.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = HLJZhongkeControl.bundle; path = "HLJZhongkeControl-HLJZhongkeControl.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E79AD53820186F5DE86726D150F447 /* MQTTClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MQTTClient.framework; path = MQTTClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYModel.framework; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -815,6 +815,7 @@
 				46EB2E00001230 /* Support Files */,
 				46EB2E00000250 /* UIKit */,
 			);
+			name = AFNetworking;
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
@@ -827,6 +828,7 @@
 				46EB2E000003C0 /* GCDAsyncUdpSocket.m */,
 				46EB2E000013B0 /* Support Files */,
 			);
+			name = CocoaAsyncSocket;
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
@@ -852,6 +854,7 @@
 				46EB2E00000B00 /* Min */,
 				46EB2E00002160 /* Support Files */,
 			);
+			name = MQTTClient;
 			path = MQTTClient;
 			sourceTree = "<group>";
 		};
@@ -863,6 +866,7 @@
 				46EB2E00000DA0 /* UIView+Toast.m */,
 				46EB2E000022D0 /* Support Files */,
 			);
+			name = Toast;
 			path = Toast;
 			sourceTree = "<group>";
 		};
@@ -876,6 +880,7 @@
 				46EB2E00000E00 /* YYModel.h */,
 				46EB2E00002460 /* Support Files */,
 			);
+			name = YYModel;
 			path = YYModel;
 			sourceTree = "<group>";
 		};
@@ -886,6 +891,7 @@
 				46EB2E000015E0 /* Support Files */,
 				46EB2E00000F00 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -1014,6 +1020,7 @@
 				46EB2E000004C0 /* HLJBaseViewController.h */,
 				46EB2E000004D0 /* HLJBaseViewController.m */,
 			);
+			name = BaseVC;
 			path = BaseVC;
 			sourceTree = "<group>";
 		};
@@ -1027,6 +1034,7 @@
 				46EB2E00000530 /* HLJDeviceViewController.m */,
 				46EB2E00000540 /* HLJDeviceViewController.xib */,
 			);
+			name = Device;
 			path = Device;
 			sourceTree = "<group>";
 		};
@@ -1046,6 +1054,7 @@
 				46EB2E00000600 /* HLJSettingStepTableViewCell.m */,
 				46EB2E00000610 /* HLJSettingStepTableViewCell.xib */,
 			);
+			name = LectureModel;
 			path = LectureModel;
 			sourceTree = "<group>";
 		};
@@ -1067,6 +1076,7 @@
 				46EB2E000006F0 /* HLJLedControllViewController.m */,
 				46EB2E00000700 /* HLJLedControllViewController.xib */,
 			);
+			name = LedControllManager;
 			path = LedControllManager;
 			sourceTree = "<group>";
 		};
@@ -1077,6 +1087,7 @@
 				46EB2E00000730 /* HLJLoginPageViewController.m */,
 				46EB2E00000740 /* HLJLoginPageViewController.xib */,
 			);
+			name = LoginPage;
 			path = LoginPage;
 			sourceTree = "<group>";
 		};
@@ -1089,6 +1100,7 @@
 				46EB2E00000760 /* Cell */,
 				46EB2E00000860 /* RelateList */,
 			);
+			name = Main;
 			path = Main;
 			sourceTree = "<group>";
 		};
@@ -1108,6 +1120,7 @@
 				46EB2E00000810 /* HLJNotifyCollectionViewCell.m */,
 				46EB2E00000820 /* HLJNotifyCollectionViewCell.xib */,
 			);
+			name = Cell;
 			path = Cell;
 			sourceTree = "<group>";
 		};
@@ -1118,6 +1131,7 @@
 				46EB2E00000880 /* HLJRelateListViewController.m */,
 				46EB2E00000890 /* HLJRelateListViewController.xib */,
 			);
+			name = RelateList;
 			path = RelateList;
 			sourceTree = "<group>";
 		};
@@ -1131,6 +1145,7 @@
 				46EB2E000008F0 /* HLJMineViewController.m */,
 				46EB2E00000900 /* HLJMineViewController.xib */,
 			);
+			name = Mine;
 			path = Mine;
 			sourceTree = "<group>";
 		};
@@ -1141,6 +1156,7 @@
 				46EB2E00000930 /* HLJRemoteControlViewController.m */,
 				46EB2E00000940 /* HLJRemoteControlViewController.xib */,
 			);
+			name = RemoteControl;
 			path = RemoteControl;
 			sourceTree = "<group>";
 		};
@@ -1150,6 +1166,7 @@
 				46EB2E00000960 /* RoleMain */,
 				46EB2E000009D0 /* RoleNext */,
 			);
+			name = Role;
 			path = Role;
 			sourceTree = "<group>";
 		};
@@ -1163,6 +1180,7 @@
 				46EB2E000009B0 /* RoleViewController.m */,
 				46EB2E000009C0 /* RoleViewController.xib */,
 			);
+			name = RoleMain;
 			path = RoleMain;
 			sourceTree = "<group>";
 		};
@@ -1173,6 +1191,7 @@
 				46EB2E000009F0 /* RoleNextViewController.m */,
 				46EB2E00000A00 /* RoleNextViewController.xib */,
 			);
+			name = RoleNext;
 			path = RoleNext;
 			sourceTree = "<group>";
 		};
@@ -1183,6 +1202,7 @@
 				46EB2E00000A30 /* StartPageViewController.m */,
 				46EB2E00000A40 /* StartPageViewController.xib */,
 			);
+			name = StartPage;
 			path = StartPage;
 			sourceTree = "<group>";
 		};
@@ -1193,6 +1213,7 @@
 				46EB2E00000A70 /* HLJTabViewController.m */,
 				46EB2E00000A80 /* HLJTabViewController.xib */,
 			);
+			name = Tab;
 			path = Tab;
 			sourceTree = "<group>";
 		};
@@ -2316,7 +2337,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
