@@ -9,7 +9,8 @@
 #import "HLJCardViewController.h"
 #import "HLJCardListViewController.h"
 #import "HLJLedControllManager.h"
-@interface HLJCardViewController ()<UITableViewDelegate,UITableViewDataSource,UITextViewDelegate>
+#import "UIView+Toast.h"
+@interface HLJCardViewController ()<UITableViewDelegate,UITableViewDataSource,UITextViewDelegate,GCDAsyncSocketDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,strong) NSString *textString;
 @property (nonatomic,strong) UILabel *placehoulderLabel;
@@ -31,7 +32,24 @@
     [leftbutton addTarget:self action:@selector(rightButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightitem= [[UIBarButtonItem alloc]initWithCustomView:leftbutton];
     self.navigationItem.rightBarButtonItem=rightitem;
+    [HLJLedControllManager shared].controlSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+    [[HLJLedControllManager shared] TCPConnectToHost:@"220.181.38.148" onPort:443];
     // Do any additional setup after loading the view from its nib.
+}
+- (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port{
+    [self.view makeToast:@"TCP链接成功"];
+}
+- (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err{
+    NSLog(@"TCP链接失败");
+    [self.view makeToast:err.description];
+    [[HLJLedControllManager shared] TCPConnectToHost:@"220.181.38.148" onPort:443];
+}
+
+- (void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag{
+    NSLog(@"写数据成功");
+}
+- (void)socket:(GCDAsyncSocket *)sock didReadData:(nonnull NSData *)data withTag:(long)tag{
+    NSLog(@"读数据成功");
 }
 
 - (void)rightButtonClicked:sender{

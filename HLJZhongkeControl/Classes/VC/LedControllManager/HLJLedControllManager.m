@@ -20,7 +20,7 @@
                         @"CE D2 B0 AE D6 D0 BA BD C8 ED BC FE ",
                         @"45 8C ",
                         @"A5"]];
-        client.controlSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+        
     });
     return client;
 }
@@ -41,7 +41,7 @@
 }
 
 - (void)openLed{
-    NSString *openCmd = @"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 22 00 00 00 00 00 00 00 00 00 00 AF 90 A5";
+    NSString *openCmd = @"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 21 00 00 00 00 00 00 00 00 00 00 AF 90 A5";
     [self.controlSocket writeData:[openCmd dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:0];
 }
 
