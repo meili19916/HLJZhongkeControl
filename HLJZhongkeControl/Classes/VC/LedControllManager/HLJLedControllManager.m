@@ -42,12 +42,15 @@
 
 - (void)openLed{
     NSString *openCmd = @"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 21 00 00 00 00 00 00 00 00 00 00 AF 90 A5";
-    [self.controlSocket writeData:[NSKeyedArchiver archivedDataWithRootObject:[self hexToByteArray:openCmd]] withTimeout:-1 tag:0];
+    NSData *data = [self dataFromHexString:openCmd];
+    [self.controlSocket writeData:data withTimeout:-1 tag:0];
 }
 
 -(void)closeLed{
     NSString *closeCmd = @"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 22 00 00 00 00 00 00 00 00 00 00 AF 90 A5";
-    [self.controlSocket writeData:[NSKeyedArchiver archivedDataWithRootObject:[self hexToByteArray:closeCmd]] withTimeout:-1 tag:0];
+    NSData *data = [self dataFromHexString:closeCmd];
+    [self.controlSocket writeData:data withTimeout:-1 tag:0];
+//    [self.controlSocket writeData:[NSKeyedArchiver archivedDataWithRootObject:[self hexToByteArray:closeCmd]] withTimeout:-1 tag:0];
 }
 
 
@@ -209,5 +212,25 @@
     }
     return result;
 }
+-(NSData *) dataFromHexString:(NSString *) string {
+    if([string length] % 2 == 1){
+        string = [@"0"stringByAppendingString:string];
+    }
+    
+    const char *chars = [string UTF8String];
+    int i = 0, len = (int)[string length];
 
+    NSMutableData *data = [NSMutableData dataWithCapacity:len / 2];
+    char byteChars[3] = {'\0','\0','\0'};
+    unsigned long wholeByte;
+
+    while (i < len) {
+        byteChars[0] = chars[i++];
+        byteChars[1] = chars[i++];
+        wholeByte = strtoul(byteChars, NULL, 16);
+        [data appendBytes:&wholeByte length:1];
+    }
+    return data;
+
+}
 @end
