@@ -42,15 +42,12 @@
 
 - (void)openLed{
     NSString *openCmd = @"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 21 00 00 00 00 00 00 00 00 00 00 AF 90 A5";
-    NSData *data = [self dataFromHexString:openCmd];
-    [self.controlSocket writeData:data withTimeout:-1 tag:0];
+    [self.controlSocket writeData:[self hexToByteData:openCmd] withTimeout:-1 tag:0];
 }
 
 -(void)closeLed{
     NSString *closeCmd = @"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 22 00 00 00 00 00 00 00 00 00 00 AF 90 A5";
-    NSData *data = [self dataFromHexString:closeCmd];
-    [self.controlSocket writeData:data withTimeout:-1 tag:0];
-//    [self.controlSocket writeData:[NSKeyedArchiver archivedDataWithRootObject:[self hexToByteArray:closeCmd]] withTimeout:-1 tag:0];
+    [self.controlSocket writeData:[self hexToByteData:closeCmd] withTimeout:-1 tag:0];
 }
 
 
@@ -73,8 +70,8 @@
     for (NSString *str in self.SEDN_CMD) {
         strSendText = [strSendText stringByAppendingString:str];
     }
-    NSArray *bytes = [self hexToByteArray:strSendText];
-    [self.controlSocket writeData:[NSKeyedArchiver archivedDataWithRootObject:bytes] withTimeout:-1 tag:0];
+//    NSArray *bytes = [self hexToByteArray:strSendText];
+    [self.controlSocket writeData:[self hexToByteData:strSendText] withTimeout:-1 tag:0];
  }
 
 - (NSString*)toHexString:(int)hexNumber{
@@ -212,25 +209,22 @@
     }
     return result;
 }
--(NSData *) dataFromHexString:(NSString *) string {
-    if([string length] % 2 == 1){
-        string = [@"0"stringByAppendingString:string];
+
+- (NSData*)hexToByteData:(NSString *)inHex{
+    inHex = [inHex stringByReplacingOccurrencesOfString:@" " withString:@""];
+    int hexlen = inHex.length;
+    NSMutableData *result = [NSMutableData new];
+    if (hexlen % 2 == 1) {
+        hexlen ++;
+        result = [[NSMutableArray alloc] init];
+        inHex = [@"0" stringByAppendingString:inHex];
     }
-    
-    const char *chars = [string UTF8String];
-    int i = 0, len = (int)[string length];
-
-    NSMutableData *data = [NSMutableData dataWithCapacity:len / 2];
-    char byteChars[3] = {'\0','\0','\0'};
-    unsigned long wholeByte;
-
-    while (i < len) {
-        byteChars[0] = chars[i++];
-        byteChars[1] = chars[i++];
-        wholeByte = strtoul(byteChars, NULL, 16);
-        [data appendBytes:&wholeByte length:1];
+    for (int i = 0; i < hexlen; i += 2) {
+        Byte byte = [self hexToByte:[inHex substringWithRange:NSMakeRange(i , 2)]];
+        Byte * a = malloc(1);
+        a[0] = byte;
+        [result appendBytes:a length:1];
     }
-    return data;
-
+    return result;
 }
 @end
