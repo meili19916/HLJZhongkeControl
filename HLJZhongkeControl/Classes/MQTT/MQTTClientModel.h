@@ -51,7 +51,6 @@ typedef void (^SubscribeTopicHandler)(NSString *topic, BOOL success);
  @param topic 主题
  */
 - (void)unsubscribeTopic:(NSString *)topic;
-
 /**
  发布消息
  */

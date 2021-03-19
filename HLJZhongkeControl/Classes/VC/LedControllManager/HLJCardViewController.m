@@ -117,7 +117,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row == 2) {
+    if (indexPath.section == 2) {
         [[HLJLedControllManager shared] sendLed:self.textString];
     }
 }

@@ -27,11 +27,17 @@
 
 - (void)TCPConnectToHost:(NSString*)host onPort:(NSInteger)port{
     NSError * error = nil;
+    self.host = host;
+    self.port = port;
     [self.controlSocket connectToHost:host onPort:port error:&error];
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port{
     NSLog(@"TCP链接成功");
+}
+- (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err{
+    NSLog(@"TCP链接失败");
+    [self TCPConnectToHost:self.host onPort:self.port];
 }
 
 - (void)openLed{
