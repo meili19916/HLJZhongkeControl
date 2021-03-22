@@ -34,6 +34,7 @@
     self.navigationItem.rightBarButtonItem=rightitem;
     [HLJLedControllManager shared].controlSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     [[HLJLedControllManager shared] TCPConnectToHost:@"220.181.38.148" onPort:443];
+    self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
     // Do any additional setup after loading the view from its nib.
 }
 - (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port{
@@ -135,6 +136,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.view endEditing:YES];
     if (indexPath.section == 2) {
         [[HLJLedControllManager shared] sendLed:self.textString];
     }
