@@ -41,7 +41,7 @@
 }
 
 - (void)openLed{
-    NSString *openCmd = @"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 21 00 00 00 00 00 00 00 00 00 00 AF 90 A5";
+    NSString *openCmd = @"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 21 00 00 00 00 00 00 00 00 00 00 A0 D4 A5";
     [self.controlSocket writeData:[self hexToByteData:openCmd] withTimeout:-1 tag:0];
 }
 
@@ -49,8 +49,6 @@
     NSString *closeCmd = @"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 22 00 00 00 00 00 00 00 00 00 00 AF 90 A5";
     [self.controlSocket writeData:[self hexToByteData:closeCmd] withTimeout:-1 tag:0];
 }
-
-
 
 - (void)sendLed:(NSString *)text{
     int len = text.length;
@@ -70,7 +68,6 @@
     for (NSString *str in self.SEDN_CMD) {
         strSendText = [strSendText stringByAppendingString:str];
     }
-//    NSArray *bytes = [self hexToByteArray:strSendText];
     [self.controlSocket writeData:[self hexToByteData:strSendText] withTimeout:-1 tag:0];
  }
 
