@@ -571,10 +571,10 @@
 		8434433E25E38D5E005F5B0E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				84DBF4C22609CCC800D9F49E /* Header */,
 				8434460C25F0C3CE005F5B0E /* Model */,
 				8434449D25E8EB98005F5B0E /* Network */,
 				8434448825E8D18F005F5B0E /* MQTT */,
-				8434433F25E38D5E005F5B0E /* HLJZhongkeControl.h */,
 				8434434025E38D5E005F5B0E /* .gitkeep */,
 				8434434125E38D5E005F5B0E /* VC */,
 			);
@@ -907,6 +907,14 @@
 				8460DA0C25FB015C0002D275 /* HLJSettingStepTableViewCell.xib */,
 			);
 			path = LectureModel;
+			sourceTree = "<group>";
+		};
+		84DBF4C22609CCC800D9F49E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8434433F25E38D5E005F5B0E /* HLJZhongkeControl.h */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
