@@ -10,6 +10,7 @@
 #import "HLJCardListTableViewCell.h"
 @interface HLJCardListViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic)  NSArray *dataArray;
 
 @end
 
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"迎宾词历史记录";
+    self.dataArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"CardHistoryArray"];
+
     [self.tableView registerNib:[UINib nibWithNibName:@"HLJCardListTableViewCell" bundle:nil] forCellReuseIdentifier:@"HLJCardListTableViewCell"];
 
     // Do any additional setup after loading the view from its nib.
@@ -27,7 +30,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return self.dataArray.count;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 10;
@@ -41,8 +44,9 @@
     
     HLJCardListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HLJCardListTableViewCell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.nameLabel.text = @"迎宾词";
-    cell.timeLabel.text = @"2020.3.4 13:23";
+    NSDictionary *data = self.dataArray[indexPath.row];
+    cell.nameLabel.text = data[@"name"];
+    cell.timeLabel.text = data[@"time"];
     return cell;
 }
 /*

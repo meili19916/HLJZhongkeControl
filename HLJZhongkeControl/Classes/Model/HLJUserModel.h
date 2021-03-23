@@ -12,12 +12,26 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface HLJUserInfoImageModel : NSObject
+@property (nonatomic,strong) NSString *md5;
+@property (nonatomic,strong) NSString *url;
+@end
+
+@interface HLJUserInfoModel : NSObject
+@property (nonatomic,strong) NSString *mobile;
+@property (nonatomic,strong) NSString *position_tag;
+@property (nonatomic,strong) NSString *name;
+@property (nonatomic,strong) HLJUserInfoImageModel *face_md5;
+@end
+
 @interface HLJUserModel : NSObject
 @property (nonatomic,strong) NSString *token;
 @property (nonatomic,strong) NSString *name;
+@property (nonatomic,strong) HLJUserInfoModel *user_info;
 @property (nonatomic,strong) HLJDeviceModel *currentDeviceModel;
-
 @end
+
+
 @interface HLJDeviceModel : NSObject
 @property (nonatomic,strong) NSString *id;
 @property (nonatomic,strong) NSString *parent;
@@ -124,6 +138,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *ip;
 @property (nonatomic, assign) NSInteger no;
 @end
+
 @interface LectureDeviceInfoModel : NSObject
 @property (nonatomic, copy) NSString *device_id;
 @property (nonatomic, copy) NSString *imei;

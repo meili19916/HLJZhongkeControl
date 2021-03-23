@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HLJSettingStepTableViewCell : UITableViewCell<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-- (void)updateLightCountOn:(NSInteger)onCount offCount:(NSInteger)offCont;
+- (void)updateLightCountOn:(NSInteger)onCount offCount:(NSInteger)offCont cardText:(NSString*)cardText;
 @end
 
 NS_ASSUME_NONNULL_END

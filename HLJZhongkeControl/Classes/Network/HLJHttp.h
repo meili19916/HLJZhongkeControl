@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)getLecureInfo:(NSString*)lectureId success:(void (^)(NSDictionary *data))success failure:(void (^)(NSInteger code,NSString *error))failure;
 
 -(void)getDeviceShowList:(NSDictionary*)data success:(void (^)(NSDictionary *data))success failure:(void (^)(NSInteger code,NSString *error))failure;
+-(void)getUserInfo:(void (^)(NSDictionary *data))success failure:(void (^)(NSInteger code,NSString *error))failure;
 @end
 
 NS_ASSUME_NONNULL_END

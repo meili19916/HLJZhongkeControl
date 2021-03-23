@@ -33,6 +33,8 @@
 @property (nonatomic,strong) LectureModel *lectureModel;
 @property (nonatomic,assign) NSInteger MQTTStatus;
 @property (nonatomic, strong) NSString *currentCompany;
+@property (nonatomic,strong) NSArray *lightArray;
+@property (nonatomic,strong) NSArray *ledArray;
 
 @end
 
@@ -79,11 +81,13 @@
     [self addNavigationBarView];
     [self mqttConnect];
     [[HLJHttp shared] getTurnList:@{@"exhibition_code":self.currentDevice.tree_code,@"turn_type":@0,@"skip":@0,@"limit":@-1} success:^(NSDictionary * _Nonnull data) {
+        self.lightArray = data[@"items"];
         NSLog(@"");
     } failure:^(NSInteger code, NSString * _Nonnull error) {
         
     }];
     [[HLJHttp shared] getTurnList:@{@"exhibition_code":self.currentDevice.tree_code,@"turn_type":@1,@"skip":@0,@"limit":@-1} success:^(NSDictionary * _Nonnull data) {
+        self.ledArray = data[@"items"];
         NSLog(@"");
     } failure:^(NSInteger code, NSString * _Nonnull error) {
         
@@ -95,7 +99,6 @@
     
     if (!self.locationButton) {
         self.locationButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,60,30)];
-        [self.locationButton setImage:[UIImage imageNamed:@"icon_dw_tm"] forState:UIControlStateNormal];
         [self.locationButton setTitle:@"" forState:UIControlStateNormal];
         self.locationButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
         [self.locationButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -106,9 +109,16 @@
 
    CGFloat width = [self widthLineFeedWithFont:self.locationButton.titleLabel.font textSizeHeight:30 text:self.currentDevice.name];
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width >= 300 ? 300 : width + 20 , 30)];
-    
     [view addSubview:self.locationButton];
     self.locationButton.frame = CGRectMake(self.locationButton.frame.origin.x, self.locationButton.frame.origin.y, view.frame.size.width, self.locationButton.frame.size.height);
+    
+    
+    UIButton *arrowButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [arrowButton setImage:[UIImage imageNamed:@"icon_arrow_tm_y"] forState:UIControlStateNormal];
+    arrowButton.frame = CGRectMake(self.locationButton.frame.origin.x + view.frame.size.width - 20, 0, 20, 30);
+    [arrowButton addTarget:self action:@selector(navigationRight2ButtonClick:)forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:arrowButton];
+    
     UIBarButtonItem *item2 = [[UIBarButtonItem alloc] initWithCustomView:view];
     self.tabBarController.navigationItem.leftBarButtonItem = item2;
     self.tabBarController.title = @"";
@@ -272,9 +282,12 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        [self.navigationController pushViewController:[HLJLedControllViewController new] animated:YES];
+        HLJLedControllViewController *vc = [HLJLedControllViewController new];
+        vc.dataArray = self.lightArray;
+        [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 1) {
         HLJLedControllViewController *vc = [HLJLedControllViewController new];
+        vc.dataArray = self.ledArray;
         vc.isElectricControl = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 2) {

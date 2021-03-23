@@ -13,7 +13,12 @@
 @end
 
 @implementation HLJBaseViewController
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]init];
+        backButton.title = @"";
+    self.navigationItem.backBarButtonItem = backButton;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.

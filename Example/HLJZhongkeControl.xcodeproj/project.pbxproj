@@ -161,6 +161,10 @@
 		84B122D225F8CDA000ADCE79 /* HLJHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B122D025F8CDA000ADCE79 /* HLJHeaderCollectionReusableView.xib */; };
 		84B122E425F8CF8E00ADCE79 /* HLJMQTTCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B122E225F8CF8E00ADCE79 /* HLJMQTTCollectionReusableView.m */; };
 		84B122E525F8CF8E00ADCE79 /* HLJMQTTCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B122E325F8CF8E00ADCE79 /* HLJMQTTCollectionReusableView.xib */; };
+		84DBF49826097D8600D9F49E /* 编组 12@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DBF49626097D8500D9F49E /* 编组 12@3x.png */; };
+		84DBF49926097D8600D9F49E /* 编组 12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DBF49726097D8500D9F49E /* 编组 12@2x.png */; };
+		84DBF49E26097DF500D9F49E /* icon_arrow_tm_y@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DBF49C26097DF500D9F49E /* icon_arrow_tm_y@3x.png */; };
+		84DBF49F26097DF500D9F49E /* icon_arrow_tm_y@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DBF49D26097DF500D9F49E /* icon_arrow_tm_y@2x.png */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		969BDEC0FF5F9E3E9F9822C0 /* Pods_HLJZhongkeControl_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA770CFCD0A29AF20EA2B99A /* Pods_HLJZhongkeControl_Example.framework */; };
 /* End PBXBuildFile section */
@@ -376,9 +380,13 @@
 		84B122E125F8CF8E00ADCE79 /* HLJMQTTCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJMQTTCollectionReusableView.h; sourceTree = "<group>"; };
 		84B122E225F8CF8E00ADCE79 /* HLJMQTTCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJMQTTCollectionReusableView.m; sourceTree = "<group>"; };
 		84B122E325F8CF8E00ADCE79 /* HLJMQTTCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLJMQTTCollectionReusableView.xib; sourceTree = "<group>"; };
+		84DBF49626097D8500D9F49E /* 编组 12@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "编组 12@3x.png"; sourceTree = "<group>"; };
+		84DBF49726097D8500D9F49E /* 编组 12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "编组 12@2x.png"; sourceTree = "<group>"; };
+		84DBF49C26097DF500D9F49E /* icon_arrow_tm_y@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_arrow_tm_y@3x.png"; sourceTree = "<group>"; };
+		84DBF49D26097DF500D9F49E /* icon_arrow_tm_y@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_arrow_tm_y@2x.png"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BF63268E6D66B39E3E4DCDA /* Pods-HLJZhongkeControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJZhongkeControl_Example.debug.xcconfig"; path = "Target Support Files/Pods-HLJZhongkeControl_Example/Pods-HLJZhongkeControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A6E8E9AD1CA2740D3DE05EA7 /* HLJZhongkeControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HLJZhongkeControl.podspec; path = ../HLJZhongkeControl.podspec; sourceTree = "<group>"; };
+		A6E8E9AD1CA2740D3DE05EA7 /* HLJZhongkeControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HLJZhongkeControl.podspec; path = ../HLJZhongkeControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AEBFFB2959C20EDABA9880C1 /* Pods-HLJZhongkeControl_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJZhongkeControl_Tests.release.xcconfig"; path = "Target Support Files/Pods-HLJZhongkeControl_Tests/Pods-HLJZhongkeControl_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DA770CFCD0A29AF20EA2B99A /* Pods_HLJZhongkeControl_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLJZhongkeControl_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE775A11E10CAB8B2BD29037 /* Pods-HLJZhongkeControl_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJZhongkeControl_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HLJZhongkeControl_Tests/Pods-HLJZhongkeControl_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -790,6 +798,10 @@
 		8434453B25EC9321005F5B0E /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				84DBF49D26097DF500D9F49E /* icon_arrow_tm_y@2x.png */,
+				84DBF49C26097DF500D9F49E /* icon_arrow_tm_y@3x.png */,
+				84DBF49726097D8500D9F49E /* 编组 12@2x.png */,
+				84DBF49626097D8500D9F49E /* 编组 12@3x.png */,
 				8434453C25EC9321005F5B0E /* icon_arrow_r@2x.png */,
 				8434453D25EC9321005F5B0E /* icon_arrow_r@3x.png */,
 				8434453E25EC9321005F5B0E /* icon_sz@2x.png */,
@@ -992,6 +1004,7 @@
 				8434450925EC923B005F5B0E /* icon_ybpm@3x.png in Resources */,
 				8434450A25EC923B005F5B0E /* icon_dykz@2x.png in Resources */,
 				8434454725EC9321005F5B0E /* icon_kf@2x.png in Resources */,
+				84DBF49F26097DF500D9F49E /* icon_arrow_tm_y@2x.png in Resources */,
 				8434457E25EC9338005F5B0E /* icon_tc@3x.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				8434454625EC9321005F5B0E /* icon_kf@3x.png in Resources */,
@@ -1031,6 +1044,7 @@
 				8434452825EC923B005F5B0E /* icon_dgsz@2x.png in Resources */,
 				84B122D225F8CDA000ADCE79 /* HLJHeaderCollectionReusableView.xib in Resources */,
 				8434451F25EC923B005F5B0E /* icon_sb_df@2x.png in Resources */,
+				84DBF49826097D8600D9F49E /* 编组 12@3x.png in Resources */,
 				8434458525EC9338005F5B0E /* icon_bf@2x.png in Resources */,
 				8434450825EC923B005F5B0E /* icon_wljz@3x.png in Resources */,
 				8434434B25E38D80005F5B0E /* HLJLoginPageViewController.xib in Resources */,
@@ -1051,6 +1065,7 @@
 				8434452925EC923B005F5B0E /* icon_dg@3x.png in Resources */,
 				8460D9E725FA11510002D275 /* icon_zd_y@3x.png in Resources */,
 				8460D9E025FA10E60002D275 /* icon_11@3x.png in Resources */,
+				84DBF49926097D8600D9F49E /* 编组 12@2x.png in Resources */,
 				8434451025EC923B005F5B0E /* icon_ztzc@3x.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				8434450D25EC923B005F5B0E /* icon_sy_pre@3x.png in Resources */,
@@ -1078,6 +1093,7 @@
 				8434451525EC923B005F5B0E /* icon_dykz@3x.png in Resources */,
 				8434454325EC9321005F5B0E /* icon_arrow_r@3x.png in Resources */,
 				8434457B25EC9338005F5B0E /* icon_avator@3x.png in Resources */,
+				84DBF49E26097DF500D9F49E /* icon_arrow_tm_y@3x.png in Resources */,
 				8460DA0025FA1ECC0002D275 /* HLJImageStepTableViewCell.xib in Resources */,
 				8434458325EC9338005F5B0E /* icon_cb@2x.png in Resources */,
 				8434458025EC9338005F5B0E /* icon_cb@3x.png in Resources */,
@@ -1181,6 +1197,7 @@
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/HLJZhongkeControl/HLJZhongkeControl.framework",
 				"${BUILT_PRODUCTS_DIR}/MQTTClient/MQTTClient.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
@@ -1190,6 +1207,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HLJZhongkeControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MQTTClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);

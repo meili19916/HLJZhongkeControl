@@ -8,6 +8,10 @@
 
 #import "HLJMineViewController.h"
 #import "HLJMineHeaderView.h"
+#import "HLJHttp.h"
+#import "HLJLoginPageViewController.h"
+#import "UIImageView+WebCache.h"
+
 @interface HLJMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,strong) HLJMineHeaderView *headerView;
@@ -17,17 +21,36 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.tabBarController.title = @"";
-    self.tabBarController.navigationItem.leftBarButtonItem = nil;
-    self.tabBarController.navigationItem.rightBarButtonItem = nil;
+    UIBarButtonItem *item2 = [[UIBarButtonItem alloc] init];
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] init];
+
+    self.tabBarController.navigationItem.leftBarButtonItem = item2;
+    self.tabBarController.navigationItem.rightBarButtonItem = item1;
+    [self getData];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"logout"];
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 90)];
+    self.headerView.nameLabel.text = [HLJHttp shared].user.name;
+//    self.headerView.mobileLabel.text = [HLJHttp shared].user.mobile;
+
     [view addSubview:self.headerView];
     self.tableView.tableHeaderView = view;
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)getData{
+    [[HLJHttp shared] getUserInfo:^(NSDictionary * _Nonnull data) {
+        [HLJHttp shared].user.user_info = [HLJUserInfoModel yy_modelWithJSON:data[@"user_info"]];
+        self.headerView.nameLabel.text = [HLJHttp shared].user.name;
+        self.headerView.positionLabel.text = [HLJHttp shared].user.user_info.position_tag;
+        self.headerView.mobileLabel.text = [HLJHttp shared].user.user_info.mobile;
+        [self.headerView.headImageView sd_setImageWithURL:[NSURL URLWithString:[HLJHttp shared].user.user_info.face_md5.url] placeholderImage:[UIImage imageNamed:@"icon_avator"]];
+        self.headerView.positionBackView.hidden = [HLJHttp shared].user.user_info.position_tag.length == 0;
+    } failure:^(NSInteger code, NSString * _Nonnull error) {
+    }];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -69,6 +92,13 @@
     label.font = [UIFont systemFontOfSize:15];
     [cell.contentView addSubview:label];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 1) {
+        [HLJHttp shared].user.token = nil;
+        [self.navigationController pushViewController:[HLJLoginPageViewController new] animated:YES];
+    }
 }
 
 - (HLJMineHeaderView *)headerView{

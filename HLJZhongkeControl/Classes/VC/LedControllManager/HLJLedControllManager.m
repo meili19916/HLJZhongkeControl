@@ -54,7 +54,6 @@
     int len = text.length;
     text =  [self unicode_to_GB2312string:text];
     NSString *temp = text;
-    NSString *str = [self toHexString:34];
     self.SEDN_CMD[1] = [self toHexString:8+len*2];
     self.SEDN_CMD[2] = [@"01 00 01 02 06 01 " stringByAppendingString:[self toHexString:len*2]];
     self.SEDN_CMD[3] = temp;

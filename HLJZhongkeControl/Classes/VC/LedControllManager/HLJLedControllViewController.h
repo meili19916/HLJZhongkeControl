@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HLJLedControllViewController : UIViewController
+@property (nonatomic,strong) NSArray *dataArray;
 @property (nonatomic,assign) BOOL isElectricControl;
 @end
 

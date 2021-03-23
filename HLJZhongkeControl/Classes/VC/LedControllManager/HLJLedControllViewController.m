@@ -18,8 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = self.isElectricControl ? @"电源控制" : @"灯光控制";
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"firstCell"];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -32,7 +30,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return section == 0 ? 1 : 3;
+    return section == 0 ? 1 : self.dataArray.count;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 10;
@@ -45,9 +43,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *imageName = self.isElectricControl ? @"icon_dy" : @"icon_dg";
     if (indexPath.section == 0) {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"firstCell" forIndexPath:indexPath];
-        for (UIView *view in cell.contentView.subviews) {
-            [view removeFromSuperview];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"firstCell"];
+        if (!cell) {
+            cell = [UITableViewCell new];
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.textLabel.font = [UIFont boldSystemFontOfSize:15];
@@ -99,23 +97,26 @@
 
         return cell;
     }
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    for (UIView *view in cell.contentView.subviews) {
-        [view removeFromSuperview];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [UITableViewCell new];
     }
+    NSDictionary *data = self.dataArray[indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.font = [UIFont boldSystemFontOfSize:15];
     cell.imageView.image = [UIImage imageNamed:imageName];
-    cell.textLabel.text = @"电源名称";
+    cell.textLabel.text = data[@"name"];
     UISwitch *switchButton = [[UISwitch alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 50 - 54, 5, 44, 44)];
     switchButton.tag = indexPath.row;
+    switchButton.onTintColor = [UIColor colorWithRed:(float)35/255 green:(float)111/255 blue:(float)226/255 alpha:1];
     [switchButton addTarget:self action:@selector(swichChanged:) forControlEvents:UIControlEventValueChanged];
     [cell.contentView addSubview:switchButton];
     return cell;
 }
 
 - (void)swichChanged:(UISwitch*)sender{
-    
+    NSDictionary *data = self.dataArray[sender.tag];
+
 }
 
 - (void)openButtonclicked:(UIButton*)sender{

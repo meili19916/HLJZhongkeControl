@@ -6,11 +6,11 @@
 //  Copyright © 2021 meili19916. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "HLJBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HLJCardViewController : UIViewController
+@interface HLJCardViewController : HLJBaseViewController
 
 @end
 

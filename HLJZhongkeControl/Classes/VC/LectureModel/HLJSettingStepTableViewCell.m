@@ -11,6 +11,8 @@
 @interface HLJSettingStepTableViewCell()
 @property (nonatomic,assign) NSInteger onCount;
 @property (nonatomic,assign) NSInteger offCount;
+@property (nonatomic,strong) NSString *cardText;
+
 @end
 @implementation HLJSettingStepTableViewCell
 
@@ -28,11 +30,13 @@
     return 1;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 1;
+    return 2;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return CGSizeMake(([UIScreen mainScreen].bounds.size.width- 30)/2 , 120);
+    return CGSizeMake(130 , 120);
+}
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+    return 5.f;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -46,30 +50,14 @@
     if (indexPath.row == 0) {
         cell.titleLabel.text = @"灯光设置";
         cell.lab1Label.text = @"点亮";
-        cell.lab2Label.text = [NSString stringWithFormat:@"%d",self.onCount];
+        cell.lab2Label.text = [NSString stringWithFormat:@"%ld",(long)self.onCount];
         cell.lab3Label.text = @"熄灭";
-        cell.lab4Label.text = [NSString stringWithFormat:@"%d",self.offCount];
+        cell.lab4Label.text = [NSString stringWithFormat:@"%ld",self.offCount];
         cell.contentImageView.image = [UIImage imageNamed:@"icon_dgsz"];
     }else if (indexPath.row == 1) {
-        cell.titleLabel.text = @"电源控制";
-        cell.lab1Label.text = @"关闭";
-        cell.lab2Label.text = @"0";
-        cell.lab3Label.text = @"打开";
-        cell.lab4Label.text = @"0";
-        cell.contentImageView.image = [UIImage imageNamed:@"icon_dykz"];
-
-    }else if (indexPath.row == 2) {
         cell.titleLabel.text = @"字符卡设置";
-        cell.lab1Label.text = @"关闭";
+        cell.lab1Label.text = self.cardText;
         cell.lab2Label.hidden = YES;
-        cell.lab3Label.hidden = YES;
-        cell.lab4Label.hidden = YES;
-        cell.contentImageView.image = [UIImage imageNamed:@"icon_zfksz"];
-
-    }else if (indexPath.row == 3) {
-        cell.titleLabel.text = @"区域信息";
-        cell.lab1Label.text = @"当前位置";
-        cell.lab2Label.text = @"成都";
         cell.lab3Label.hidden = YES;
         cell.lab4Label.hidden = YES;
         cell.contentImageView.image = [UIImage imageNamed:@"icon_zfksz"];
@@ -78,11 +66,13 @@
 }
 
 
-- (void)updateLightCountOn:(NSInteger)onCount offCount:(NSInteger)offCont{
+- (void)updateLightCountOn:(NSInteger)onCount offCount:(NSInteger)offCont cardText:(NSString*)cardText{
     self.onCount = onCount;
-    self.offCount = self.offCount;
+    self.offCount = offCont;
+    self.cardText = cardText;
     [self.collectionView reloadData];
 }
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

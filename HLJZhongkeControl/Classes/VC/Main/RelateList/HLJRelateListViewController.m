@@ -21,6 +21,7 @@
     [super viewDidLoad];
     self.title = @"展厅";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+
     // Do any additional setup after loading the view from its nib.
 }
 

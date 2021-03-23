@@ -12,7 +12,8 @@
 #import "HLJImageStepTableViewCell.h"
 #import "HLJNoteStepTableViewCell.h"
 #import "HLJSettingStepTableViewCell.h"
-//#import "UIImageView+WebCache.h"
+#import "HLJLedControllManager.h"
+#import "UIImageView+WebCache.h"
 @interface HLJLectureModelViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,assign) NSInteger currentStep;
@@ -24,13 +25,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"演讲模式";
+    [HLJLedControllManager shared].controlSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+
     self.deviceArray = [NSMutableArray new];
     [self.tableView registerNib:[UINib nibWithNibName:@"HLJDeviceTableViewCell" bundle:nil] forCellReuseIdentifier:@"HLJDeviceTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"HLJImageStepTableViewCell" bundle:nil] forCellReuseIdentifier:@"HLJImageStepTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"HLJNoteStepTableViewCell" bundle:nil] forCellReuseIdentifier:@"HLJNoteStepTableViewCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"HLJSettingStepTableViewCell" bundle:nil] forCellReuseIdentifier:@"HLJSettingStepTableViewCell"];
     self.currentStep = 0;
+    [self sendLedContent];
+
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)sendLedContent{
+    [[HLJLedControllManager shared] TCPConnectToHost:self.model.Steps[self.currentStep].led_set.led_ip onPort:self.model.Steps[self.currentStep].led_set.led_port];
+    [[HLJLedControllManager shared] sendLed:self.model.Steps[self.currentStep].led_set.led_content];
 }
 - (void)getData{
 //    [[HLJHttp shared] getLecureInfo:self.lectureId success:^(NSDictionary * _Nonnull data) {
@@ -75,12 +86,13 @@
     if (indexPath.section == 0) {
         HLJImageStepTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HLJImageStepTableViewCell" forIndexPath:indexPath];
         cell.titleLabel.text = [NSString stringWithFormat:@"%d/%d",self.currentStep+1,self.model.Steps.count];
+        [cell.backImageView sd_setImageWithURL:[NSURL URLWithString:self.model.Steps[self.currentStep].img]];
         cell.beforeBlock = ^(id  _Nonnull blockData) {
-            
             weakSelf.currentStep -= 1;
             if (weakSelf.currentStep < 0) {
                 weakSelf.currentStep = 0;
             }else{
+                [weakSelf sendLedContent];
                 [weakSelf.deviceArray removeAllObjects];
             }
             [weakSelf.tableView reloadData];
@@ -90,6 +102,7 @@
             if (weakSelf.currentStep >= self.model.Steps.count) {
                 weakSelf.currentStep = self.model.Steps.count - 1;
             }else{
+                [weakSelf sendLedContent];
                 [weakSelf.deviceArray removeAllObjects];
             }
             [weakSelf.tableView reloadData];
@@ -110,7 +123,7 @@
                 offCount ++;
             }
         }
-        [cell updateLightCountOn:onCount offCount:offCount];
+        [cell updateLightCountOn:onCount offCount:offCount cardText:self.model.Steps[self.currentStep].led_set.led_content];
         return cell;
     }
     

@@ -7,7 +7,10 @@
 //
 
 #import "HLJUserModel.h"
-
+@implementation HLJUserInfoImageModel
+@end
+@implementation HLJUserInfoModel
+@end
 @implementation HLJUserModel
 
 @end
@@ -44,6 +47,13 @@
 
 + (NSDictionary<NSString *,id> *)modelContainerPropertyGenericClass{
     return @{@"light_setting_detail" : [LectureLightDetailModel class]};
+}
+
+-(NSString *)img{
+    if (_img.length > 0 && ![_img containsString:@"http://"]) {
+        return [NSString stringWithFormat:@"https://exhibition.rfidtrace.com/data/ali-file/%@",_img];
+    }
+    return _img;
 }
 @end
 @implementation LectureLightDetailModel

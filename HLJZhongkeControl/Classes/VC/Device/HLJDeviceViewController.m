@@ -19,8 +19,11 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.tabBarController.title = @"设备";
-    self.tabBarController.navigationItem.leftBarButtonItem = nil;
-    self.tabBarController.navigationItem.rightBarButtonItem = nil;
+    UIBarButtonItem *item2 = [[UIBarButtonItem alloc] init];
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] init];
+
+    self.tabBarController.navigationItem.leftBarButtonItem = item2;
+    self.tabBarController.navigationItem.rightBarButtonItem = item1;
 
     [self getData];
 }

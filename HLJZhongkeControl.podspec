@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HLJZhongkeControl'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A short description of HLJZhongkeControl.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = 'SDK'
-
   s.homepage         = 'https://github.com/meili19916/HLJZhongkeControl'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -41,5 +40,5 @@ s.dependency 'AFNetworking'
 s.dependency 'Toast'
 s.dependency  'MQTTClient'
 s.dependency 'YYModel'
-#s.dependency 'SDWebImage', '~> 5.0'
+s.dependency 'SDWebImage'
 end

@@ -182,4 +182,15 @@
     } finally:^{
     }];
 }
+
+-(void)getUserInfo:(void (^)(NSDictionary *data))success failure:(void (^)(NSInteger code,NSString *error))failure {
+    [self get:@"admin/info" data:nil success:^(NSDictionary *data) {
+        success(data);
+    } failure:^(NSInteger code, NSString *error) {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        failure(code,error);
+        
+    } finally:^{
+    }];
+}
 @end

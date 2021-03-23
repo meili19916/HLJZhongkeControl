@@ -22,9 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"迎宾屏设置";
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"firstCell"];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"save"];
     UIButton *leftbutton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 50, 20)];
     [leftbutton setTitle:@"历史记录" forState:UIControlStateNormal];
     leftbutton.titleLabel.font = [UIFont systemFontOfSize:15];
@@ -32,7 +29,6 @@
     [leftbutton addTarget:self action:@selector(rightButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightitem= [[UIBarButtonItem alloc]initWithCustomView:leftbutton];
     self.navigationItem.rightBarButtonItem=rightitem;
-    [HLJLedControllManager shared].controlSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     [[HLJLedControllManager shared] TCPConnectToHost:@"220.181.38.148" onPort:443];
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
     // Do any additional setup after loading the view from its nib.
@@ -83,9 +79,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *imageName = @"icon_ybpm";
     if (indexPath.section == 0) {
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"firstCell" forIndexPath:indexPath];
-        for (UIView *view in cell.contentView.subviews) {
-            [view removeFromSuperview];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"firstCell" ];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] init];
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.textLabel.font = [UIFont boldSystemFontOfSize:15];
@@ -95,13 +91,11 @@
         switchButton.tag = indexPath.row;
         [switchButton addTarget:self action:@selector(swichChanged:) forControlEvents:UIControlEventValueChanged];
         [cell.contentView addSubview:switchButton];
-        
-
         return cell;
     }else if(indexPath.section == 1){
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-        for (UIView *view in cell.contentView.subviews) {
-            [view removeFromSuperview];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] init];
         }
 //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.textLabel.font = [UIFont boldSystemFontOfSize:15];
@@ -117,13 +111,17 @@
             if (!self.placehoulderLabel) {
                 self.placehoulderLabel = [[UILabel alloc] initWithFrame:CGRectMake(textView.frame.origin.x + 3, textView.frame.origin.y + 7, 100, 20)];
                 self.placehoulderLabel.text = @"请输入迎宾词";
+                self.placehoulderLabel.textColor = [UIColor darkGrayColor];
                 self.placehoulderLabel.font = [UIFont systemFontOfSize:14];
             }
             [cell.contentView addSubview:self.placehoulderLabel];
         }
         return cell;
     }
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"save" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"save" ];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] init];
+    }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.backgroundColor =  [UIColor colorWithRed:(float)35/255 green:(float)111/255 blue:(float)226/255 alpha:1];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
@@ -139,6 +137,18 @@
     [self.view endEditing:YES];
     if (indexPath.section == 2) {
         [[HLJLedControllManager shared] sendLed:self.textString];
+        NSDate *date = [NSDate date];NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        NSString *time_now = [formatter stringFromDate:date];
+        NSDictionary *sendListDic = @{@"name":self.textString,@"time":time_now};
+        NSArray *localArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"CardHistoryArray"];
+        if (!localArray) {
+            localArray = [NSArray new];
+        }
+        NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:localArray];
+        [mutableArray insertObject:sendListDic atIndex:0];
+        [[NSUserDefaults standardUserDefaults] setObject:mutableArray forKey:@"CardHistoryArray"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
     }
 }
 

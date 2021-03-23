@@ -29,9 +29,11 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-
--(void)viewWillAppear:(BOOL)animated{
+- (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]}; // title颜色
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+
 }
 
 -(void)pushToLoginView{
