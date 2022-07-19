@@ -1,8 +1,7 @@
 {
   "name": "HLJZhongkeControl",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "summary": "A short description of HLJZhongkeControl.",
-  "description": "SDK",
   "homepage": "https://github.com/meili19916/HLJZhongkeControl",
   "license": {
     "type": "MIT",
@@ -12,8 +11,8 @@
     "meili19916": "315179118@qq.com"
   },
   "source": {
-    "git": "git@github.com:meili19916/HLJZhongkeControl.git",
-    "tag": "0.2.1"
+    "git": "https://github.com/meili19916/HLJZhongkeControl.git",
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "11.0"

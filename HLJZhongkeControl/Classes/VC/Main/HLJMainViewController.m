@@ -291,7 +291,9 @@
         vc.isElectricControl = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 2) {
-        [self.navigationController pushViewController:[HLJCardViewController new] animated:YES];
+        HLJCardViewController *vc = [HLJCardViewController new];
+        vc.dataArray = self.currentDevice.led_infos;
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
@@ -302,9 +304,11 @@
 //    [[MQTTClientModel sharedInstance] sendDataToTopic:[NSString stringWithFormat:@"innovation_v1/message/%@/%@",self.currentDevice.mq_group,self.currentDevice.id] data:[[NSData alloc] initWithData:[string dataUsingEncoding:NSUTF8StringEncoding]]];
     HLJRelateListViewController *vc = [HLJRelateListViewController new];
     vc.dataArray = self.deviceArray;
+    vc.currentName = self.currentDevice.name;
     __weak typeof(self) weakSelf = self;
     vc.selectDeviceBlock = ^(id blockData) {
         weakSelf.currentDevice = blockData;
+        [HLJHttp shared].user.currentDeviceModel = self.currentDevice;
         [weakSelf updateData];
         [weakSelf.collectionView reloadData];
     };
@@ -341,6 +345,7 @@
     NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:string options:NSDataBase64DecodingIgnoreUnknownCharacters];
     NSData* unzip = [self zlibInflate:decodedData];
     string = [[NSString alloc] initWithData:unzip encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",string);
 }
 
 
@@ -480,18 +485,20 @@
             searchText = [searchText stringByReplacingOccurrencesOfString:@"\x02" withString:@""];
             searchText = [searchText stringByReplacingOccurrencesOfString:@"en" withString:@""];
             if(searchText.length > 0){
-                [[HLJHttp shared] getUUIDInfo:searchText success:^(NSDictionary *data) {
+                [[HLJHttp shared] getUUIDInfo:[searchText uppercaseString] success:^(NSDictionary *data) {
                     [self.view hideToastActivity];
                     self.model = [UUIDModel yy_modelWithJSON:data[@"item"]];
                     if([self.model.format isEqualToString:@"partner"]){
                         if(self.model.mulit){
-//                            [self showList];
                             self.currentCompany = self.model.mulit_info.firstObject.name;
-                        }else{
-                            [self postMQTTMessage:self.model];
+                        }else if(self.model.partner_info){
+                            self.currentCompany = self.model.partner_info.name;
                         }
+                        [self postMQTTMessage:data[@"item"]];
+
+
                     }else{
-                        [self postMQTTMessage:self.model];
+                        [self postMQTTMessage:data[@"item"]];
                     }
                     if (self.model.demos_script.length > 0) {
                         [self getLectureInfo];
@@ -527,12 +534,13 @@
 
 }
 
-- (void)postMQTTMessage:(UUIDModel*)model{
+- (void)postMQTTMessage:(NSDictionary*)model{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSString *str = [model yy_modelToJSONString];
         NSData* en = [self zlibDeflate:str];
         NSString *string  = [en base64EncodedStringWithOptions:0];
-        [[MQTTClientModel sharedInstance] sendDataToTopic:[NSString stringWithFormat:@"innovation_v1/message/%@/%@",self.currentDevice.mq_group,self.currentDevice.id] data:[[NSData alloc] initWithData:[string dataUsingEncoding:NSUTF8StringEncoding]]];
+        NSString *msg = [NSString stringWithFormat:@"innovation_v1/message/%@/%@",self.currentDevice.mq_group,self.currentDevice.id];
+        [[MQTTClientModel sharedInstance] sendDataToTopic:msg data:[[NSData alloc] initWithData:[string dataUsingEncoding:NSUTF8StringEncoding]]];
     });
 }
 /*

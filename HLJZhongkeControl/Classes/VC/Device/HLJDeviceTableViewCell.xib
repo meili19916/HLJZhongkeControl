@@ -48,13 +48,13 @@
                         <rect key="frame" x="17" y="191" width="24" height="24"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frw-TV-9cb">
-                        <rect key="frame" x="271" y="195.5" width="32" height="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frw-TV-9cb">
+                        <rect key="frame" x="284" y="195.5" width="19" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重新播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqU-Ee-fIY">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重新播放" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqU-Ee-fIY">
                         <rect key="frame" x="135" y="130" width="50" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
@@ -80,7 +80,7 @@
                             <action selector="remoteButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4QB-7p-BA8"/>
                         </connections>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂停|继续" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soa-vu-PWc">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂停|继续" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soa-vu-PWc">
                         <rect key="frame" x="30" y="130" width="52.5" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
@@ -94,7 +94,7 @@
                         </connections>
                     </button>
                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zkS-Nm-QS1">
-                        <rect key="frame" x="54" y="186.5" width="209" height="34"/>
+                        <rect key="frame" x="54" y="186.5" width="222" height="34"/>
                         <connections>
                             <action selector="sliderValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="jG2-ds-abs"/>
                         </connections>
@@ -106,6 +106,7 @@
                     <constraint firstItem="K1T-Xx-aRu" firstAttribute="trailing" secondItem="soa-vu-PWc" secondAttribute="trailing" id="C4S-Jo-6cF"/>
                     <constraint firstItem="IJa-rG-sqb" firstAttribute="centerY" secondItem="rqU-Ee-fIY" secondAttribute="centerY" id="Cdm-Bf-vZJ"/>
                     <constraint firstItem="rqU-Ee-fIY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Cvn-Rj-u4h"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HdC-pp-rtG" secondAttribute="trailing" constant="10" id="GR5-jb-qu7"/>
                     <constraint firstItem="TLt-fy-lxu" firstAttribute="top" secondItem="y4v-vR-nLB" secondAttribute="top" id="KOV-76-4hU"/>
                     <constraint firstItem="K1T-Xx-aRu" firstAttribute="leading" secondItem="soa-vu-PWc" secondAttribute="leading" id="Kes-U1-GLq"/>
                     <constraint firstItem="y4v-vR-nLB" firstAttribute="height" secondItem="K1T-Xx-aRu" secondAttribute="height" id="LVC-gW-X5u"/>
@@ -141,8 +142,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="button1Label" destination="soa-vu-PWc" id="wdO-SB-MAK"/>
+                <outlet property="button2Labe" destination="rqU-Ee-fIY" id="3Sy-ox-k4z"/>
                 <outlet property="nameLabel" destination="HdC-pp-rtG" id="l9v-Ku-ZNQ"/>
+                <outlet property="replayButton" destination="y4v-vR-nLB" id="Agj-4S-F4c"/>
                 <outlet property="slider" destination="zkS-Nm-QS1" id="pNF-fd-ZWP"/>
+                <outlet property="startButton" destination="K1T-Xx-aRu" id="2II-PK-MDt"/>
                 <outlet property="volomLabel" destination="Frw-TV-9cb" id="j5e-pI-cPb"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="160.04464285714286"/>

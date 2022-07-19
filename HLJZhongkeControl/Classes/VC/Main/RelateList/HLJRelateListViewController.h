@@ -13,10 +13,11 @@ typedef void (^DeviceBlock)(id blockData);
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HLJRelateListViewController : UIViewController
+@property (nonatomic,copy) NSString *currentName;
+@property (nonatomic,assign) BOOL isCard;
+
 @property (nonatomic,strong) NSArray *dataArray;
 @property (nonatomic,copy) DeviceBlock selectDeviceBlock;
-
-
 @end
 
 NS_ASSUME_NONNULL_END

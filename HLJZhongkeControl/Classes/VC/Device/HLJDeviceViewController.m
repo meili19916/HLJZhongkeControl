@@ -7,12 +7,17 @@
 //
 
 #import "HLJDeviceViewController.h"
-
+#import "SocketRocketUtility.h"
 #import "HLJDeviceTableViewCell.h"
 #import "HLJHttp.h"
+#import "HLJRemoteControlViewController.h"
+#import "UIView+Toast.h"
+
 @interface HLJDeviceViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic,strong) NSArray *deviceArray;
+@property (nonatomic,strong) NSMutableArray *deviceSocketArray;
+
 @end
 
 @implementation HLJDeviceViewController
@@ -21,26 +26,32 @@
     self.tabBarController.title = @"设备";
     UIBarButtonItem *item2 = [[UIBarButtonItem alloc] init];
     UIBarButtonItem *item1 = [[UIBarButtonItem alloc] init];
-
     self.tabBarController.navigationItem.leftBarButtonItem = item2;
     self.tabBarController.navigationItem.rightBarButtonItem = item1;
-
     [self getData];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.deviceSocketArray = [NSMutableArray new];
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"HLJDeviceTableViewCell" bundle:nil] forCellReuseIdentifier:@"HLJDeviceTableViewCell"];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)getData{
-    [[HLJHttp shared] getDeviceShowList:@{@"type_code:":[HLJHttp shared].user.currentDeviceModel.tree_code,@"status:":@1} success:^(NSDictionary * _Nonnull data) {
+    [self.deviceSocketArray removeAllObjects];
+    [[HLJHttp shared] getDeviceShowList:@{@"type_code":[HLJHttp shared].user.currentDeviceModel.tree_code,@"status":@1,@"device_type":@"display",@"limit":@"100"} success:^(NSDictionary * _Nonnull data) {
         NSMutableArray *array = [NSMutableArray new];
         for (NSDictionary *dic in data[@"items"]) {
             DeviceShowModel *model = [DeviceShowModel yy_modelWithJSON:dic];
             [array addObject:model];
         }
         self.deviceArray = [NSArray arrayWithArray:array];
+
+        for (NSInteger i = 0; i < self.deviceArray.count ; i++) {
+            SocketRocketUtility *socket = [SocketRocketUtility new];
+            [self.deviceSocketArray addObject:socket];
+        }
         [self.tableView reloadData];
     } failure:^(NSInteger code, NSString * _Nonnull error) {
             
@@ -62,20 +73,28 @@
     cell.layer.cornerRadius = 8.0;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     DeviceShowModel *model =self.deviceArray[indexPath.row];
+    cell.model = model;
+    cell.socket = self.deviceSocketArray[indexPath.row];
     cell.nameLabel.text = model.name;
-//    cell.slider.value = model.volume;
-//    cell.volomLabel.text = [NSString stringWithFormat:@"%.f%%",model.volume];
-//    cell.voiceChangedBlock = ^(id  _Nonnull blockData) {
-//
-//    };
+    
+    cell.controllBlock = ^(id  _Nonnull blockData) {
+        HLJRemoteControlViewController *vc = [HLJRemoteControlViewController new];
+        vc.model = model;
+        vc.deviceArray = self.deviceArray;
+        [self.navigationController pushViewController:vc animated:YES];
+    };
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    DeviceShowModel *model =self.deviceArray[indexPath.row];
-    model.expand = !model.expand;
-    [tableView reloadData];
-
+    HLJDeviceTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if (cell.socket.socketReadyState != SR_OPEN) {
+        [self.view makeToast:@"设备未连接" duration:3 position:CSToastPositionCenter];
+    }else{
+        DeviceShowModel *model =self.deviceArray[indexPath.row];
+        model.expand = !model.expand;
+        [tableView reloadData];
+    }
 }
 /*
 #pragma mark - Navigation
@@ -86,5 +105,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)SRWebSocketDidSendMsgError:(NSNotification *)note{
+    
+}
 
 @end

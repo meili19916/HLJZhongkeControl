@@ -7,11 +7,11 @@
 //
 
 #import "HLJBaseViewController.h"
-
+@class HLJCardModel;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HLJCardViewController : HLJBaseViewController
-
+@property (nonatomic,strong) NSArray <HLJCardModel*>*dataArray;
 @end
 
 NS_ASSUME_NONNULL_END

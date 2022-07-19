@@ -16,6 +16,9 @@
 @end
 @implementation HLJDeviceModel
 
++ (NSDictionary<NSString *,id> *)modelContainerPropertyGenericClass{
+    return @{@"led_infos" : [HLJCardModel class]};
+}
 @end
 @implementation UUIDModel
 
@@ -69,5 +72,8 @@
 
 @end
 @implementation DeviceShowModel
+
+@end
+@implementation HLJCardModel
 
 @end

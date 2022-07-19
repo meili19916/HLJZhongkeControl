@@ -43,6 +43,9 @@
 #import "RoleNextViewController.h"
 #import "StartPageViewController.h"
 #import "HLJTabViewController.h"
+#import "SocketRocket.h"
+#import "SRWebSocket.h"
+#import "SocketRocketUtility.h"
 
 FOUNDATION_EXPORT double HLJZhongkeControlVersionNumber;
 FOUNDATION_EXPORT const unsigned char HLJZhongkeControlVersionString[];

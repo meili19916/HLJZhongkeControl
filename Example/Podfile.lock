@@ -20,7 +20,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - HLJZhongkeControl (0.2.1):
+  - HLJZhongkeControl (0.2.2):
     - AFNetworking
     - CocoaAsyncSocket (~> 7.6.5)
     - MQTTClient
@@ -63,7 +63,7 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  HLJZhongkeControl: a1049a5d8676e07453e287fe2c9ac93036092b07
+  HLJZhongkeControl: a9b8457bb7bdd2346fdc735a49000df93a4a357f
   MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196

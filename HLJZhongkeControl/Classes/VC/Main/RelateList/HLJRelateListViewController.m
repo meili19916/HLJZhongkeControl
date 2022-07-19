@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"展厅";
+    self.title = self.isCard ? @"字符卡" :@"展厅";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 
     // Do any additional setup after loading the view from its nib.
@@ -38,12 +38,30 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.font = [UIFont systemFontOfSize:15];
+    UIImageView *image = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"icon_11"]];
+    image.highlightedImage = [UIImage imageNamed:@"icon_1"];
+    cell.accessoryView = image;
+    if(self.isCard){
+        HLJCardModel *model = self.dataArray[indexPath.row];
+        cell.textLabel.text = model.name;
+        image.highlighted = [cell.textLabel.text isEqualToString:self.currentName];
+        return cell;
+    }
     HLJDeviceModel *model = [HLJDeviceModel yy_modelWithJSON:self.dataArray[indexPath.row]];
     cell.textLabel.text = model.name;
+    image.highlighted = [cell.textLabel.text isEqualToString:self.currentName];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(self.isCard){
+        HLJCardModel *model = self.dataArray[indexPath.row];
+        if (self.selectDeviceBlock) {
+            self.selectDeviceBlock(model);
+        }
+        [self.navigationController popViewControllerAnimated:YES];
+        return;
+    }
     HLJDeviceModel *model = [HLJDeviceModel yy_modelWithJSON:self.dataArray[indexPath.row]];
     if (self.selectDeviceBlock) {
         self.selectDeviceBlock(model);

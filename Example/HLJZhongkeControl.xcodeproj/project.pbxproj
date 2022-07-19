@@ -157,6 +157,49 @@
 		8460DA0725FA203D0002D275 /* HLJNoteStepTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8460DA0525FA203D0002D275 /* HLJNoteStepTableViewCell.xib */; };
 		8460DA0D25FB015C0002D275 /* HLJSettingStepTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8460DA0B25FB015C0002D275 /* HLJSettingStepTableViewCell.m */; };
 		8460DA0E25FB015C0002D275 /* HLJSettingStepTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8460DA0C25FB015C0002D275 /* HLJSettingStepTableViewCell.xib */; };
+		84A071B8263A40E8001B138F /* 矩形 + 6 蒙版@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A07191263A40E8001B138F /* 矩形 + 6 蒙版@3x.png */; };
+		84A071B9263A40E8001B138F /* xia.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A07192263A40E8001B138F /* xia.png */; };
+		84A071BA263A40E8001B138F /* j.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A07193263A40E8001B138F /* j.png */; };
+		84A071BB263A40E8001B138F /* shang.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A07194263A40E8001B138F /* shang.png */; };
+		84A071BC263A40E8001B138F /* 设备.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A07195263A40E8001B138F /* 设备.png */; };
+		84A071BD263A40E8001B138F /* jr@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A07196263A40E8001B138F /* jr@3x.png */; };
+		84A071BE263A40E8001B138F /* 三角形@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A07197263A40E8001B138F /* 三角形@2x.png */; };
+		84A071BF263A40E8001B138F /* 编组 2备份.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A07198263A40E8001B138F /* 编组 2备份.png */; };
+		84A071C0263A40E8001B138F /* 三角形@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A07199263A40E8001B138F /* 三角形@3x.png */; };
+		84A071C1263A40E8001B138F /* jr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A0719A263A40E8001B138F /* jr@2x.png */; };
+		84A071C2263A40E8001B138F /* 矩形 + 矩形备.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A0719B263A40E8001B138F /* 矩形 + 矩形备.png */; };
+		84A071C3263A40E8001B138F /* 矩形 + 6 蒙版@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A0719C263A40E8001B138F /* 矩形 + 6 蒙版@2x.png */; };
+		84A071C4263A40E8001B138F /* 路径.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A0719D263A40E8001B138F /* 路径.png */; };
+		84A071C5263A40E8001B138F /* 矩形备份 6 蒙版@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A0719E263A40E8001B138F /* 矩形备份 6 蒙版@2x.png */; };
+		84A071C6263A40E8001B138F /* kg.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A0719F263A40E8001B138F /* kg.png */; };
+		84A071C7263A40E8001B138F /* 设备@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071A0263A40E8001B138F /* 设备@2x.png */; };
+		84A071C8263A40E8001B138F /* xia@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071A1263A40E8001B138F /* xia@3x.png */; };
+		84A071C9263A40E8001B138F /* shang@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071A2263A40E8001B138F /* shang@3x.png */; };
+		84A071CA263A40E8001B138F /* shang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071A3263A40E8001B138F /* shang@2x.png */; };
+		84A071CB263A40E8001B138F /* 设备@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071A4263A40E8001B138F /* 设备@3x.png */; };
+		84A071CC263A40E8001B138F /* xia@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071A5263A40E8001B138F /* xia@2x.png */; };
+		84A071CD263A40E8001B138F /* jr.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071A6263A40E8001B138F /* jr.png */; };
+		84A071CE263A40E8001B138F /* 矩形备份 6 蒙版@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071A7263A40E8001B138F /* 矩形备份 6 蒙版@3x.png */; };
+		84A071CF263A40E8001B138F /* 矩形 + 6 蒙版.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071A8263A40E8001B138F /* 矩形 + 6 蒙版.png */; };
+		84A071D0263A40E8001B138F /* kg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071A9263A40E8001B138F /* kg@2x.png */; };
+		84A071D1263A40E8001B138F /* 编组 2备份@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071AA263A40E8001B138F /* 编组 2备份@2x.png */; };
+		84A071D2263A40E8001B138F /* j@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071AB263A40E8001B138F /* j@3x.png */; };
+		84A071D3263A40E8001B138F /* 矩形备份 6 蒙版.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071AC263A40E8001B138F /* 矩形备份 6 蒙版.png */; };
+		84A071D4263A40E8001B138F /* 三角形.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071AD263A40E8001B138F /* 三角形.png */; };
+		84A071D5263A40E8001B138F /* 编组 2备份@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071AE263A40E8001B138F /* 编组 2备份@3x.png */; };
+		84A071D6263A40E8001B138F /* j@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071AF263A40E8001B138F /* j@2x.png */; };
+		84A071D7263A40E8001B138F /* kg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071B0263A40E8001B138F /* kg@3x.png */; };
+		84A071D8263A40E8001B138F /* jian.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071B1263A40E8001B138F /* jian.png */; };
+		84A071D9263A40E8001B138F /* 路径@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071B2263A40E8001B138F /* 路径@3x.png */; };
+		84A071DA263A40E8001B138F /* 矩形 + 矩形备@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071B3263A40E8001B138F /* 矩形 + 矩形备@3x.png */; };
+		84A071DB263A40E8001B138F /* jian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071B4263A40E8001B138F /* jian@2x.png */; };
+		84A071DC263A40E8001B138F /* jian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071B5263A40E8001B138F /* jian@3x.png */; };
+		84A071DD263A40E8001B138F /* 矩形 + 矩形备@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071B6263A40E8001B138F /* 矩形 + 矩形备@2x.png */; };
+		84A071DE263A40E8001B138F /* 路径@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A071B7263A40E8001B138F /* 路径@2x.png */; };
+		84A4FEA62637F5C000DEFE6E /* SocketRocketUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4FEA42637F56600DEFE6E /* SocketRocketUtility.m */; };
+		84A4FEB02637F77C00DEFE6E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 84A4FEAA2637F77B00DEFE6E /* LICENSE */; };
+		84A4FEB12637F77C00DEFE6E /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4FEAC2637F77B00DEFE6E /* SRWebSocket.m */; };
+		84A4FEB22637F77C00DEFE6E /* README.rst in Resources */ = {isa = PBXBuildFile; fileRef = 84A4FEAF2637F77C00DEFE6E /* README.rst */; };
 		84B122D125F8CDA000ADCE79 /* HLJHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B122CF25F8CDA000ADCE79 /* HLJHeaderCollectionReusableView.m */; };
 		84B122D225F8CDA000ADCE79 /* HLJHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B122D025F8CDA000ADCE79 /* HLJHeaderCollectionReusableView.xib */; };
 		84B122E425F8CF8E00ADCE79 /* HLJMQTTCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B122E225F8CF8E00ADCE79 /* HLJMQTTCollectionReusableView.m */; };
@@ -374,6 +417,52 @@
 		8460DA0A25FB015C0002D275 /* HLJSettingStepTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJSettingStepTableViewCell.h; sourceTree = "<group>"; };
 		8460DA0B25FB015C0002D275 /* HLJSettingStepTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJSettingStepTableViewCell.m; sourceTree = "<group>"; };
 		8460DA0C25FB015C0002D275 /* HLJSettingStepTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLJSettingStepTableViewCell.xib; sourceTree = "<group>"; };
+		84A07191263A40E8001B138F /* 矩形 + 6 蒙版@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形 + 6 蒙版@3x.png"; sourceTree = "<group>"; };
+		84A07192263A40E8001B138F /* xia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xia.png; sourceTree = "<group>"; };
+		84A07193263A40E8001B138F /* j.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j.png; sourceTree = "<group>"; };
+		84A07194263A40E8001B138F /* shang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shang.png; sourceTree = "<group>"; };
+		84A07195263A40E8001B138F /* 设备.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设备.png"; sourceTree = "<group>"; };
+		84A07196263A40E8001B138F /* jr@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jr@3x.png"; sourceTree = "<group>"; };
+		84A07197263A40E8001B138F /* 三角形@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "三角形@2x.png"; sourceTree = "<group>"; };
+		84A07198263A40E8001B138F /* 编组 2备份.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "编组 2备份.png"; sourceTree = "<group>"; };
+		84A07199263A40E8001B138F /* 三角形@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "三角形@3x.png"; sourceTree = "<group>"; };
+		84A0719A263A40E8001B138F /* jr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jr@2x.png"; sourceTree = "<group>"; };
+		84A0719B263A40E8001B138F /* 矩形 + 矩形备.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形 + 矩形备.png"; sourceTree = "<group>"; };
+		84A0719C263A40E8001B138F /* 矩形 + 6 蒙版@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形 + 6 蒙版@2x.png"; sourceTree = "<group>"; };
+		84A0719D263A40E8001B138F /* 路径.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路径.png"; sourceTree = "<group>"; };
+		84A0719E263A40E8001B138F /* 矩形备份 6 蒙版@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形备份 6 蒙版@2x.png"; sourceTree = "<group>"; };
+		84A0719F263A40E8001B138F /* kg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kg.png; sourceTree = "<group>"; };
+		84A071A0263A40E8001B138F /* 设备@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设备@2x.png"; sourceTree = "<group>"; };
+		84A071A1263A40E8001B138F /* xia@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xia@3x.png"; sourceTree = "<group>"; };
+		84A071A2263A40E8001B138F /* shang@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shang@3x.png"; sourceTree = "<group>"; };
+		84A071A3263A40E8001B138F /* shang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shang@2x.png"; sourceTree = "<group>"; };
+		84A071A4263A40E8001B138F /* 设备@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设备@3x.png"; sourceTree = "<group>"; };
+		84A071A5263A40E8001B138F /* xia@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xia@2x.png"; sourceTree = "<group>"; };
+		84A071A6263A40E8001B138F /* jr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jr.png; sourceTree = "<group>"; };
+		84A071A7263A40E8001B138F /* 矩形备份 6 蒙版@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形备份 6 蒙版@3x.png"; sourceTree = "<group>"; };
+		84A071A8263A40E8001B138F /* 矩形 + 6 蒙版.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形 + 6 蒙版.png"; sourceTree = "<group>"; };
+		84A071A9263A40E8001B138F /* kg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kg@2x.png"; sourceTree = "<group>"; };
+		84A071AA263A40E8001B138F /* 编组 2备份@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "编组 2备份@2x.png"; sourceTree = "<group>"; };
+		84A071AB263A40E8001B138F /* j@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j@3x.png"; sourceTree = "<group>"; };
+		84A071AC263A40E8001B138F /* 矩形备份 6 蒙版.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形备份 6 蒙版.png"; sourceTree = "<group>"; };
+		84A071AD263A40E8001B138F /* 三角形.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "三角形.png"; sourceTree = "<group>"; };
+		84A071AE263A40E8001B138F /* 编组 2备份@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "编组 2备份@3x.png"; sourceTree = "<group>"; };
+		84A071AF263A40E8001B138F /* j@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "j@2x.png"; sourceTree = "<group>"; };
+		84A071B0263A40E8001B138F /* kg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kg@3x.png"; sourceTree = "<group>"; };
+		84A071B1263A40E8001B138F /* jian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jian.png; sourceTree = "<group>"; };
+		84A071B2263A40E8001B138F /* 路径@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路径@3x.png"; sourceTree = "<group>"; };
+		84A071B3263A40E8001B138F /* 矩形 + 矩形备@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形 + 矩形备@3x.png"; sourceTree = "<group>"; };
+		84A071B4263A40E8001B138F /* jian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jian@2x.png"; sourceTree = "<group>"; };
+		84A071B5263A40E8001B138F /* jian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jian@3x.png"; sourceTree = "<group>"; };
+		84A071B6263A40E8001B138F /* 矩形 + 矩形备@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "矩形 + 矩形备@2x.png"; sourceTree = "<group>"; };
+		84A071B7263A40E8001B138F /* 路径@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "路径@2x.png"; sourceTree = "<group>"; };
+		84A4FEA42637F56600DEFE6E /* SocketRocketUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketRocketUtility.m; sourceTree = "<group>"; };
+		84A4FEA52637F56600DEFE6E /* SocketRocketUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketRocketUtility.h; sourceTree = "<group>"; };
+		84A4FEAA2637F77B00DEFE6E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		84A4FEAC2637F77B00DEFE6E /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		84A4FEAD2637F77B00DEFE6E /* SocketRocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketRocket.h; sourceTree = "<group>"; };
+		84A4FEAE2637F77B00DEFE6E /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		84A4FEAF2637F77C00DEFE6E /* README.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rst; sourceTree = "<group>"; };
 		84B122CE25F8CDA000ADCE79 /* HLJHeaderCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLJHeaderCollectionReusableView.h; sourceTree = "<group>"; };
 		84B122CF25F8CDA000ADCE79 /* HLJHeaderCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLJHeaderCollectionReusableView.m; sourceTree = "<group>"; };
 		84B122D025F8CDA000ADCE79 /* HLJHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLJHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
@@ -384,6 +473,7 @@
 		84DBF49726097D8500D9F49E /* 编组 12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "编组 12@2x.png"; sourceTree = "<group>"; };
 		84DBF49C26097DF500D9F49E /* icon_arrow_tm_y@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_arrow_tm_y@3x.png"; sourceTree = "<group>"; };
 		84DBF49D26097DF500D9F49E /* icon_arrow_tm_y@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_arrow_tm_y@2x.png"; sourceTree = "<group>"; };
+		84DBF4C62609F18000D9F49E /* HLJZhongkeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLJZhongkeControl.h; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BF63268E6D66B39E3E4DCDA /* Pods-HLJZhongkeControl_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLJZhongkeControl_Example.debug.xcconfig"; path = "Target Support Files/Pods-HLJZhongkeControl_Example/Pods-HLJZhongkeControl_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A6E8E9AD1CA2740D3DE05EA7 /* HLJZhongkeControl.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HLJZhongkeControl.podspec; path = ../HLJZhongkeControl.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -557,6 +647,7 @@
 		8434433C25E38D5E005F5B0E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				84A07190263A40E8001B138F /* 遥控器 */,
 				843445AB25ECD7AE005F5B0E /* Light */,
 				8434456525EC9338005F5B0E /* 演讲模式 */,
 				8434454A25EC932E005F5B0E /* 设备 */,
@@ -571,6 +662,7 @@
 		8434433E25E38D5E005F5B0E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				84A4FEA32637F56600DEFE6E /* WebSocket */,
 				84DBF4C22609CCC800D9F49E /* Header */,
 				8434460C25F0C3CE005F5B0E /* Model */,
 				8434449D25E8EB98005F5B0E /* Network */,
@@ -585,6 +677,7 @@
 		8434434125E38D5E005F5B0E /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				84DBF4C52609F18000D9F49E /* Header */,
 				8460D9F425FA1ABC0002D275 /* LectureModel */,
 				8423C43E25F9B88200A5858B /* Role */,
 				843444A525EC80D6005F5B0E /* Mine */,
@@ -909,12 +1002,97 @@
 			path = LectureModel;
 			sourceTree = "<group>";
 		};
+		84A07190263A40E8001B138F /* 遥控器 */ = {
+			isa = PBXGroup;
+			children = (
+				84A07191263A40E8001B138F /* 矩形 + 6 蒙版@3x.png */,
+				84A07192263A40E8001B138F /* xia.png */,
+				84A07193263A40E8001B138F /* j.png */,
+				84A07194263A40E8001B138F /* shang.png */,
+				84A07195263A40E8001B138F /* 设备.png */,
+				84A07196263A40E8001B138F /* jr@3x.png */,
+				84A07197263A40E8001B138F /* 三角形@2x.png */,
+				84A07198263A40E8001B138F /* 编组 2备份.png */,
+				84A07199263A40E8001B138F /* 三角形@3x.png */,
+				84A0719A263A40E8001B138F /* jr@2x.png */,
+				84A0719B263A40E8001B138F /* 矩形 + 矩形备.png */,
+				84A0719C263A40E8001B138F /* 矩形 + 6 蒙版@2x.png */,
+				84A0719D263A40E8001B138F /* 路径.png */,
+				84A0719E263A40E8001B138F /* 矩形备份 6 蒙版@2x.png */,
+				84A0719F263A40E8001B138F /* kg.png */,
+				84A071A0263A40E8001B138F /* 设备@2x.png */,
+				84A071A1263A40E8001B138F /* xia@3x.png */,
+				84A071A2263A40E8001B138F /* shang@3x.png */,
+				84A071A3263A40E8001B138F /* shang@2x.png */,
+				84A071A4263A40E8001B138F /* 设备@3x.png */,
+				84A071A5263A40E8001B138F /* xia@2x.png */,
+				84A071A6263A40E8001B138F /* jr.png */,
+				84A071A7263A40E8001B138F /* 矩形备份 6 蒙版@3x.png */,
+				84A071A8263A40E8001B138F /* 矩形 + 6 蒙版.png */,
+				84A071A9263A40E8001B138F /* kg@2x.png */,
+				84A071AA263A40E8001B138F /* 编组 2备份@2x.png */,
+				84A071AB263A40E8001B138F /* j@3x.png */,
+				84A071AC263A40E8001B138F /* 矩形备份 6 蒙版.png */,
+				84A071AD263A40E8001B138F /* 三角形.png */,
+				84A071AE263A40E8001B138F /* 编组 2备份@3x.png */,
+				84A071AF263A40E8001B138F /* j@2x.png */,
+				84A071B0263A40E8001B138F /* kg@3x.png */,
+				84A071B1263A40E8001B138F /* jian.png */,
+				84A071B2263A40E8001B138F /* 路径@3x.png */,
+				84A071B3263A40E8001B138F /* 矩形 + 矩形备@3x.png */,
+				84A071B4263A40E8001B138F /* jian@2x.png */,
+				84A071B5263A40E8001B138F /* jian@3x.png */,
+				84A071B6263A40E8001B138F /* 矩形 + 矩形备@2x.png */,
+				84A071B7263A40E8001B138F /* 路径@2x.png */,
+			);
+			path = "遥控器";
+			sourceTree = "<group>";
+		};
+		84A4FEA32637F56600DEFE6E /* WebSocket */ = {
+			isa = PBXGroup;
+			children = (
+				84A4FEA92637F77B00DEFE6E /* SocketRocket */,
+				84A4FEA52637F56600DEFE6E /* SocketRocketUtility.h */,
+				84A4FEA42637F56600DEFE6E /* SocketRocketUtility.m */,
+			);
+			path = WebSocket;
+			sourceTree = "<group>";
+		};
+		84A4FEA92637F77B00DEFE6E /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				84A4FEAA2637F77B00DEFE6E /* LICENSE */,
+				84A4FEAB2637F77B00DEFE6E /* SocketRocket */,
+				84A4FEAF2637F77C00DEFE6E /* README.rst */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		84A4FEAB2637F77B00DEFE6E /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				84A4FEAC2637F77B00DEFE6E /* SRWebSocket.m */,
+				84A4FEAD2637F77B00DEFE6E /* SocketRocket.h */,
+				84A4FEAE2637F77B00DEFE6E /* SRWebSocket.h */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
 		84DBF4C22609CCC800D9F49E /* Header */ = {
 			isa = PBXGroup;
 			children = (
 				8434433F25E38D5E005F5B0E /* HLJZhongkeControl.h */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		84DBF4C52609F18000D9F49E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				84DBF4C62609F18000D9F49E /* HLJZhongkeControl.h */,
+			);
+			name = Header;
+			path = ../Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1002,36 +1180,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A071BA263A40E8001B138F /* j.png in Resources */,
 				8423C4CA25FA074800A5858B /* StartPageViewController.xib in Resources */,
+				84A071C6263A40E8001B138F /* kg.png in Resources */,
 				8423C48F25FA016900A5858B /* RoleNextViewController.xib in Resources */,
 				8423C49125FA016900A5858B /* RoleViewController.xib in Resources */,
+				84A071CD263A40E8001B138F /* jr.png in Resources */,
 				8434452725EC923B005F5B0E /* icon_zfksz@2x.png in Resources */,
 				8434451125EC923B005F5B0E /* icon_wd_df@3x.png in Resources */,
 				8434452025EC923B005F5B0E /* icon_dy@3x.png in Resources */,
+				84A071C5263A40E8001B138F /* 矩形备份 6 蒙版@2x.png in Resources */,
 				8434452A25EC923B005F5B0E /* icon_yjms@2x.png in Resources */,
 				8434450925EC923B005F5B0E /* icon_ybpm@3x.png in Resources */,
 				8434450A25EC923B005F5B0E /* icon_dykz@2x.png in Resources */,
 				8434454725EC9321005F5B0E /* icon_kf@2x.png in Resources */,
+				84A071C2263A40E8001B138F /* 矩形 + 矩形备.png in Resources */,
+				84A071CB263A40E8001B138F /* 设备@3x.png in Resources */,
 				84DBF49F26097DF500D9F49E /* icon_arrow_tm_y@2x.png in Resources */,
+				84A071CC263A40E8001B138F /* xia@2x.png in Resources */,
 				8434457E25EC9338005F5B0E /* icon_tc@3x.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				8434454625EC9321005F5B0E /* icon_kf@3x.png in Resources */,
 				8434455725EC932E005F5B0E /* icon_yl@3x.png in Resources */,
+				84A071D8263A40E8001B138F /* jian.png in Resources */,
+				84A4FEB02637F77C00DEFE6E /* LICENSE in Resources */,
 				843445B125ECD7AE005F5B0E /* Switch off@2x.png in Resources */,
 				8434451C25EC923B005F5B0E /* icon_wd_wd@2x.png in Resources */,
+				84A071D7263A40E8001B138F /* kg@3x.png in Resources */,
 				8434451D25EC923B005F5B0E /* icon_dy@2x.png in Resources */,
+				84A071DD263A40E8001B138F /* 矩形 + 矩形备@2x.png in Resources */,
 				8434450B25EC923B005F5B0E /* icon_yysb@3x.png in Resources */,
+				84A071BC263A40E8001B138F /* 设备.png in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				8434451725EC923B005F5B0E /* icon_wljz@2x.png in Resources */,
 				843445B225ECD7AE005F5B0E /* Switch on@2x.png in Resources */,
 				8434455825EC932E005F5B0E /* icon_cxbf@2x.png in Resources */,
 				8434454425EC9321005F5B0E /* icon_sz@2x.png in Resources */,
+				84A071BD263A40E8001B138F /* jr@3x.png in Resources */,
 				8434457925EC9338005F5B0E /* icon_zts@3x.png in Resources */,
 				8434452525EC923B005F5B0E /* icon_dgsz@3x.png in Resources */,
 				8434450E25EC923B005F5B0E /* icon_wd_df@2x.png in Resources */,
+				84A071BF263A40E8001B138F /* 编组 2备份.png in Resources */,
 				8434451325EC923B005F5B0E /* icon_yysb@2x.png in Resources */,
 				8434442C25E898B2005F5B0E /* HLJDeviceViewController.xib in Resources */,
 				8434455F25EC932E005F5B0E /* icon_jx@2x.png in Resources */,
+				84A4FEB22637F77C00DEFE6E /* README.rst in Resources */,
+				84A071D1263A40E8001B138F /* 编组 2备份@2x.png in Resources */,
 				8434440825E63593005F5B0E /* HLJMainViewController.xib in Resources */,
 				8423C45B25F9B8BA00A5858B /* 编组 5@2x.png in Resources */,
 				8434452625EC923B005F5B0E /* icon_zfksz@3x.png in Resources */,
@@ -1039,6 +1233,7 @@
 				8434450F25EC923B005F5B0E /* icon_ztzc@2x.png in Resources */,
 				8423C47025F9BE6300A5858B /* HLJLectureModelCollectionViewCell.xib in Resources */,
 				843445D325ECE713005F5B0E /* HLJCardListTableViewCell.xib in Resources */,
+				84A071BE263A40E8001B138F /* 三角形@2x.png in Resources */,
 				8434443525E89A8D005F5B0E /* HLJDeviceTableViewCell.xib in Resources */,
 				8460D9F025FA115B0002D275 /* icon_zd_x@2x.png in Resources */,
 				843445B325ECD7AE005F5B0E /* Switch on@3x.png in Resources */,
@@ -1054,6 +1249,7 @@
 				8434451F25EC923B005F5B0E /* icon_sb_df@2x.png in Resources */,
 				84DBF49826097D8600D9F49E /* 编组 12@3x.png in Resources */,
 				8434458525EC9338005F5B0E /* icon_bf@2x.png in Resources */,
+				84A071CF263A40E8001B138F /* 矩形 + 6 蒙版.png in Resources */,
 				8434450825EC923B005F5B0E /* icon_wljz@3x.png in Resources */,
 				8434434B25E38D80005F5B0E /* HLJLoginPageViewController.xib in Resources */,
 				843444AA25EC80EF005F5B0E /* HLJMineViewController.xib in Resources */,
@@ -1061,12 +1257,15 @@
 				8434456125EC932E005F5B0E /* icon_fskz@3x.png in Resources */,
 				8460D97A25FA0B400002D275 /* icon_1@3x.png in Resources */,
 				8434455925EC932E005F5B0E /* icon_cxbf@3x.png in Resources */,
+				84A071C1263A40E8001B138F /* jr@2x.png in Resources */,
 				8460D97B25FA0B400002D275 /* icon_1@2x.png in Resources */,
 				8434455E25EC932E005F5B0E /* icon_fskz@2x.png in Resources */,
 				8434455D25EC932E005F5B0E /* icon_sbmr@3x.png in Resources */,
 				8434451425EC923B005F5B0E /* icon_sb_pre@3x.png in Resources */,
 				843445CC25ECE6A3005F5B0E /* HLJCardListViewController.xib in Resources */,
 				8460DA0725FA203D0002D275 /* HLJNoteStepTableViewCell.xib in Resources */,
+				84A071DC263A40E8001B138F /* jian@3x.png in Resources */,
+				84A071CA263A40E8001B138F /* shang@2x.png in Resources */,
 				8460D9F925FA1AD80002D275 /* HLJLectureModelViewController.xib in Resources */,
 				843445BA25ECE12F005F5B0E /* HLJCardViewController.xib in Resources */,
 				8434452B25EC923B005F5B0E /* icon_arrow_y@3x.png in Resources */,
@@ -1076,28 +1275,37 @@
 				84DBF49926097D8600D9F49E /* 编组 12@2x.png in Resources */,
 				8434451025EC923B005F5B0E /* icon_ztzc@3x.png in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				84A071D5263A40E8001B138F /* 编组 2备份@3x.png in Resources */,
 				8434450D25EC923B005F5B0E /* icon_sy_pre@3x.png in Resources */,
 				8423C47625F9BEE800A5858B /* icon_dqqy@2x.png in Resources */,
 				8434458425EC9338005F5B0E /* icon_bf@3x.png in Resources */,
 				8434450C25EC923B005F5B0E /* icon_sb_pre@2x.png in Resources */,
 				8434451E25EC923B005F5B0E /* icon_sb_df@3x.png in Resources */,
+				84A071B8263A40E8001B138F /* 矩形 + 6 蒙版@3x.png in Resources */,
+				84A071C9263A40E8001B138F /* shang@3x.png in Resources */,
 				843444C025EC85FC005F5B0E /* HLJMineHeaderView.xib in Resources */,
 				8434458125EC9338005F5B0E /* icon_zxh@3x.png in Resources */,
+				84A071B9263A40E8001B138F /* xia.png in Resources */,
 				8434463A25F224EF005F5B0E /* HLJRelateListViewController.xib in Resources */,
 				8434457625EC9338005F5B0E /* icon_last@2x.png in Resources */,
 				843445B025ECD7AE005F5B0E /* Switch off@3x.png in Resources */,
 				8434454225EC9321005F5B0E /* icon_arrow_r@2x.png in Resources */,
 				8434452425EC923B005F5B0E /* icon_dg@2x.png in Resources */,
+				84A071D2263A40E8001B138F /* j@3x.png in Resources */,
 				8434456225EC932E005F5B0E /* icon_sbmr@2x.png in Resources */,
+				84A071D4263A40E8001B138F /* 三角形.png in Resources */,
 				8434456025EC932E005F5B0E /* icon_jx@3x.png in Resources */,
 				8434451B25EC923B005F5B0E /* icon_sy_df@2x.png in Resources */,
 				8434457D25EC9338005F5B0E /* icon_next@2x.png in Resources */,
+				84A071BB263A40E8001B138F /* shang.png in Resources */,
 				8434452125EC923B005F5B0E /* icon_wd_wd@3x.png in Resources */,
 				8434459D25ECBF66005F5B0E /* HLJLedControllViewController.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				8434452325EC923B005F5B0E /* icon_yjms@3x.png in Resources */,
 				8434457725EC9338005F5B0E /* icon_tc@2x.png in Resources */,
 				8434457C25EC9338005F5B0E /* icon_zts@2x.png in Resources */,
+				84A071D9263A40E8001B138F /* 路径@3x.png in Resources */,
+				84A071D0263A40E8001B138F /* kg@2x.png in Resources */,
 				8434451525EC923B005F5B0E /* icon_dykz@3x.png in Resources */,
 				8434454325EC9321005F5B0E /* icon_arrow_r@3x.png in Resources */,
 				8434457B25EC9338005F5B0E /* icon_avator@3x.png in Resources */,
@@ -1105,19 +1313,30 @@
 				8460DA0025FA1ECC0002D275 /* HLJImageStepTableViewCell.xib in Resources */,
 				8434458325EC9338005F5B0E /* icon_cb@2x.png in Resources */,
 				8434458025EC9338005F5B0E /* icon_cb@3x.png in Resources */,
+				84A071C7263A40E8001B138F /* 设备@2x.png in Resources */,
 				8460D9EB25FA11550002D275 /* icon_zd_y@2x.png in Resources */,
+				84A071C3263A40E8001B138F /* 矩形 + 6 蒙版@2x.png in Resources */,
+				84A071D6263A40E8001B138F /* j@2x.png in Resources */,
 				8423C47525F9BEE800A5858B /* icon_dqqy@3x.png in Resources */,
+				84A071DA263A40E8001B138F /* 矩形 + 矩形备@3x.png in Resources */,
 				8434436725E39074005F5B0E /* HLJRemoteControlViewController.xib in Resources */,
 				8434457F25EC9338005F5B0E /* icon_last@3x.png in Resources */,
 				8434442225E798E7005F5B0E /* HLJNotifyCollectionViewCell.xib in Resources */,
 				843443FE25E63360005F5B0E /* HLJTabViewController.xib in Resources */,
+				84A071CE263A40E8001B138F /* 矩形备份 6 蒙版@3x.png in Resources */,
+				84A071DB263A40E8001B138F /* jian@2x.png in Resources */,
 				8434451225EC923B005F5B0E /* icon_sy_pre@2x.png in Resources */,
+				84A071D3263A40E8001B138F /* 矩形备份 6 蒙版.png in Resources */,
 				8423C4D225FA07B500A5858B /* RoleTableViewCell.xib in Resources */,
 				84B122E525F8CF8E00ADCE79 /* HLJMQTTCollectionReusableView.xib in Resources */,
+				84A071C0263A40E8001B138F /* 三角形@3x.png in Resources */,
+				84A071C4263A40E8001B138F /* 路径.png in Resources */,
 				8423C45A25F9B8BA00A5858B /* 编组 5@3x.png in Resources */,
 				8434455A25EC932E005F5B0E /* icon_yl@2x.png in Resources */,
 				8434457825EC9338005F5B0E /* icon_next@3x.png in Resources */,
+				84A071C8263A40E8001B138F /* xia@3x.png in Resources */,
 				8434451625EC923B005F5B0E /* icon_ybpm@2x.png in Resources */,
+				84A071DE263A40E8001B138F /* 路径@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1231,6 +1450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A4FEA62637F5C000DEFE6E /* SocketRocketUtility.m in Sources */,
 				8423C4C625FA073C00A5858B /* StartPageViewController.m in Sources */,
 				8423C49425FA047800A5858B /* RoleNextViewController.m in Sources */,
 				8423C49625FA047800A5858B /* RoleViewController.m in Sources */,
@@ -1254,6 +1474,7 @@
 				8460D9F825FA1AD80002D275 /* HLJLectureModelViewController.m in Sources */,
 				8460DA0625FA203D0002D275 /* HLJNoteStepTableViewCell.m in Sources */,
 				843444A025E8EBBE005F5B0E /* HLJHttp.m in Sources */,
+				84A4FEB12637F77C00DEFE6E /* SRWebSocket.m in Sources */,
 				8460D9FF25FA1ECC0002D275 /* HLJImageStepTableViewCell.m in Sources */,
 				843445CB25ECE6A3005F5B0E /* HLJCardListViewController.m in Sources */,
 				8434440725E63593005F5B0E /* HLJMainViewController.m in Sources */,

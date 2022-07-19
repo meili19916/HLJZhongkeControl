@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "YYModel.h"
-@class UUIDModelMulitInfo,UUIDModelExtend,UUIDPartnerInfoModel,LectureStepModel,LectureLightDetailModel,HLJDeviceModel;
+@class HLJCardModel,UUIDModelMulitInfo,UUIDModelExtend,UUIDPartnerInfoModel,LectureStepModel,LectureLightDetailModel,HLJDeviceModel;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -40,7 +40,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSString *order;
 @property (nonatomic,strong) NSString *structure_chart;
 @property (nonatomic,strong) NSString *mq_group;
+@property (nonatomic, copy) NSArray <HLJCardModel*>*led_infos;
 
+@end
+
+@interface HLJCardModel : NSObject
+@property (nonatomic,strong) NSString *name;
+@property (nonatomic,strong) NSString *ip;
+@property (nonatomic,assign) NSInteger port;
 @end
 
 @interface UUIDModel : NSObject
@@ -164,8 +171,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @interface DeviceShowModel : NSObject
-@property (nonatomic, copy) NSString *led_port;
+@property (nonatomic, assign) NSInteger led_port;
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *ip;
+
 @property (nonatomic, copy) NSString *mq_id;
 @property (nonatomic, copy) NSArray *formats;
 @property (nonatomic, assign) BOOL use_led;
@@ -184,7 +193,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *led_content;
 @property (nonatomic, assign) BOOL use_default;
 @property (nonatomic, copy) NSString *search_name;
+
+
 @property (nonatomic, assign) BOOL expand;
+@property (nonatomic, copy) NSString *label1Text;
+@property (nonatomic, copy) NSString *label2Text;
+
 
 @end
 

@@ -14,6 +14,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         client = [HLJLedControllManager new];
+        client.controlSocket = [[GCDAsyncSocket alloc] initWithDelegate:client delegateQueue:dispatch_get_main_queue()];
         client.SEDN_CMD = [NSMutableArray new];
         [client.SEDN_CMD addObjectsFromArray:@[@"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 29 BC FD 00 00 00 00 00 00 ",
                         @"14 00 ",@"01 00 01 02 06 01 ",
@@ -24,6 +25,18 @@
     });
     return client;
 }
+
+//- (instancetype)init{
+//    self = [super init];
+//    self.SEDN_CMD = [NSMutableArray new];
+//    [self.SEDN_CMD addObjectsFromArray:@[@"FF FF FF FF FF FF 00 00 00 00 78 34 01 00 29 BC FD 00 00 00 00 00 00 ",
+//                    @"14 00 ",@"01 00 01 02 06 01 ",
+//                    @"CE D2 B0 AE D6 D0 BA BD C8 ED BC FE ",
+//                    @"45 8C ",
+//                    @"A5"]];
+//    self.controlSocket = [[GCDAsyncSocket alloc]initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+//    return self;
+//}
 
 - (void)TCPConnectToHost:(NSString*)host onPort:(NSInteger)port{
     NSError * error = nil;

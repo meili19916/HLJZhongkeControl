@@ -21,20 +21,40 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="kwG-5k-zsn">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="768"/>
                     <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="ykK-44-2LV"/>
                         <outlet property="delegate" destination="-1" id="WAH-GB-x35"/>
                     </connections>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVG-oe-sDu">
+                    <rect key="frame" x="15" y="822" width="384" height="38"/>
+                    <color key="backgroundColor" red="0.22824251649999999" green="0.4256011844" blue="0.85497492549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="ajR-nq-Ovn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="保存"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="saveCard:" destination="-1" eventType="touchUpInside" id="5Pk-0U-HFN"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="kwG-5k-zsn" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="09z-n1-tSc"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="kwG-5k-zsn" secondAttribute="bottom" id="NtY-as-6va"/>
+                <constraint firstItem="PVG-oe-sDu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="1Bf-DQ-JtB"/>
+                <constraint firstItem="PVG-oe-sDu" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="J1s-gM-Tt3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="kwG-5k-zsn" secondAttribute="bottom" constant="50" id="NtY-as-6va"/>
                 <constraint firstItem="kwG-5k-zsn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Yd6-Ji-0fh"/>
+                <constraint firstItem="PVG-oe-sDu" firstAttribute="top" secondItem="kwG-5k-zsn" secondAttribute="bottom" constant="10" id="Zgi-BS-2Hl"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kwG-5k-zsn" secondAttribute="trailing" id="wug-rZ-qX1"/>
             </constraints>
             <point key="canvasLocation" x="139" y="140"/>

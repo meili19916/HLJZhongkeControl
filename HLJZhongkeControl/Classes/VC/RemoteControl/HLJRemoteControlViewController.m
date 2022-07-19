@@ -11,13 +11,14 @@
 #include <zlib.h>
 #import <Toast/UIView+Toast.h>
 //发数据接口:1322  搜udp广播端口:1233
-@interface HLJRemoteControlViewController ()<GCDAsyncUdpSocketDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface HLJRemoteControlViewController ()<GCDAsyncUdpSocketDelegate,UITableViewDelegate,UITableViewDataSource>{
+    NSInteger startX;
+    NSInteger startY;
+}
 @property (weak, nonatomic) IBOutlet UILabel *deviceNameLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentView;
-@property (nonatomic,strong) GCDAsyncUdpSocket *udpSocket;
 @property (nonatomic,strong) GCDAsyncUdpSocket *controlSocket;
 @property (weak, nonatomic) IBOutlet UIButton *switchButton;
-@property (nonatomic,strong) NSMutableDictionary *deviceArray;
 @property (nonatomic,strong) UIView *deviceListView;
 @property (nonatomic,strong) UITableView *deviceTableView;
 @property (weak, nonatomic) IBOutlet UIView *controlBackView;
@@ -40,13 +41,19 @@
 @implementation HLJRemoteControlViewController
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear: animated];
-    [_udpSocket close];
-    _udpSocket = nil;
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+
+    [self.controlSocket close];
+    self.controlSocket = nil;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.deviceArray = [NSMutableDictionary new];
-    [self UDPConnect];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    self.deviceNameLabel.text = self.model.name;
+    self.controlSocket = [[GCDAsyncUdpSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+    NSError * error = nil;
+    [self.controlSocket connectToHost:self.model.ip onPort:1322 error:&error];
+   
     UILongPressGestureRecognizer *longGes = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(switchButtonLongGes:)];
     [self.switchButton addGestureRecognizer:longGes];
     self.sureButton.layer.cornerRadius = 60;
@@ -64,6 +71,10 @@
     self.backButton.layer.cornerRadius = 33;
     self.backButton.layer.borderColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5].CGColor;
     self.backButton.layer.borderWidth = 1;
+    
+    self.menuButton.layer.cornerRadius = 33;
+    self.menuButton.layer.borderColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5].CGColor;
+    self.menuButton.layer.borderWidth = 1;
     
     self.inputTextButton.layer.cornerRadius = 33;
     self.inputTextButton.layer.borderColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5].CGColor;
@@ -120,18 +131,22 @@
 }
 
 - (void)panGesture:(UIPanGestureRecognizer*)gesture{
-    CGPoint point = [gesture translationInView:self.view];
-    CGPoint volocity = [gesture velocityInView:self.view];
-
-    NSInteger x =  point.x;
-    NSInteger y =  point.y;
-    NSInteger scale = 3;
-    NSData *data = [[NSString stringWithFormat:@"move %d %d",x, y] dataUsingEncoding:NSUTF8StringEncoding];
-//    NSLog(@"---------------------------&&& %d %d %d %d",,x,y);
-    [self.controlSocket sendData:data withTimeout:1 tag:1];
-    if (gesture.state == UIGestureRecognizerStateChanged){
-        
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        CGPoint point  = [gesture locationInView:self.view];
+        startX = point.x;
+        startY = point.y;
+        return;
     }
+    CGPoint point = [gesture locationInView:self.view];
+    NSInteger moveX = point.x;
+    NSInteger moveY = point.y;
+    NSInteger x =   moveX - startX;
+    NSInteger y =   moveY - startY ;
+    NSData *data = [[NSString stringWithFormat:@"move %d %d",x*2, y*2] dataUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"---------------------------&&& %d %d %.f %.f",x,y,moveX,moveY);
+    [self.controlSocket sendData:data withTimeout:1 tag:1];
+    startX = moveX;
+    startY = moveY;
 }
 
 - (void)longTapGesture:gesture{
@@ -144,22 +159,8 @@
     [self.controlSocket sendData:data withTimeout:3 tag:1];
 }
 
-- (void)UDPConnect{
-    _udpSocket = [[GCDAsyncUdpSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
-    NSError * error = nil;
-    [_udpSocket bindToPort:12333 error:&error];
-    
-    if (error) {//监听错误打印错误信息
-//        [self.view makeToast:error.description duration:3 position:CSToastPositionCenter];
-        [_udpSocket beginReceiving:&error];
-        NSLog(@"error:%@",error);
-    }else {//监听成功则开始接收信息
-        [_udpSocket beginReceiving:&error];
-    }
-}
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didNotConnect:(NSError *)error{
     [self.view makeToast:@"UDP未链接" duration:3 position:CSToastPositionCenter];
-
 }
 
 - (void)udpSocketDidClose:(GCDAsyncUdpSocket *)sock withError:(NSError *)error{
@@ -177,41 +178,39 @@
 
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didReceiveData:(NSData *)data fromAddress:(NSData *)address withFilterContext:(id)filterContext
 {
-    if (sock == self.udpSocket) {
-        [self reciveBroadPostData:data fromAddress:address];
-    }
+    
 }
 
-- (void)reciveBroadPostData:(NSData*)data fromAddress:(NSData *)address{
-    NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-//    [self.view makeToast:[NSString stringWithFormat:@"收到广播:%@",string] duration:3 position:CSToastPositionCenter];
-
-    NSArray *array = [string componentsSeparatedByString:@"="];
-    if (array.count > 0) {
-        array = [[array lastObject] componentsSeparatedByString:@";end"];
-        if (array.count > 0) {
-            string =  (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL, (__bridge CFStringRef)[array firstObject], CFSTR(""), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
-            string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-            NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:string options:0];
-            NSData* unzip = [self gzipInflate:decodedData];
-            string = [[NSString alloc] initWithData:unzip encoding:NSUTF8StringEncoding];
-            NSString *addressString = [GCDAsyncUdpSocket hostFromAddress:address];
-            if ([addressString containsString:@":"]) {
-                addressString = [[addressString componentsSeparatedByString:@":"] lastObject];
-            }
-            if (self.deviceArray.allValues.count == 0) {
-                self.controlSocket = [[GCDAsyncUdpSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
-                NSError * error = nil;
-                [self.controlSocket connectToHost:addressString onPort:1322 error:&error];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    self.deviceNameLabel.text = string;
-                });
-            }
-            [self.deviceArray setObject:addressString forKey:string];
-          
-        }
-    }
-}
+//- (void)reciveBroadPostData:(NSData*)data fromAddress:(NSData *)address{
+//    NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+////    [self.view makeToast:[NSString stringWithFormat:@"收到广播:%@",string] duration:3 position:CSToastPositionCenter];
+//
+//    NSArray *array = [string componentsSeparatedByString:@"="];
+//    if (array.count > 0) {
+//        array = [[array lastObject] componentsSeparatedByString:@";end"];
+//        if (array.count > 0) {
+//            string =  (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL, (__bridge CFStringRef)[array firstObject], CFSTR(""), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+//            string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+//            NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:string options:0];
+//            NSData* unzip = [self gzipInflate:decodedData];
+//            string = [[NSString alloc] initWithData:unzip encoding:NSUTF8StringEncoding];
+//            NSString *addressString = [GCDAsyncUdpSocket hostFromAddress:address];
+//            if ([addressString containsString:@":"]) {
+//                addressString = [[addressString componentsSeparatedByString:@":"] lastObject];
+//            }
+//            if (self.deviceArray.allValues.count == 0) {
+//                self.controlSocket = [[GCDAsyncUdpSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+//                NSError * error = nil;
+//                [self.controlSocket connectToHost:qi onPort:1322 error:&error];
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    self.deviceNameLabel.text = string;
+//                });
+//            }
+//            [self.deviceArray setObject:addressString forKey:string];
+//          
+//        }
+//    }
+//}
 
 #pragma mark zip
 
@@ -428,7 +427,6 @@
         self.deviceTableView.backgroundColor = [UIColor whiteColor];
         self.deviceTableView.separatorColor = [UIColor colorWithRed:238/255 green:238/255 blue:238/255 alpha:0.3];
         [_deviceListView addSubview:self.deviceTableView];
-        
     }
     return _deviceListView;
 }
@@ -452,7 +450,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.deviceArray.allKeys.count;
+    return self.deviceArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -461,7 +459,8 @@
         cell = [UITableViewCell new];
         cell.textLabel.font = [UIFont systemFontOfSize:15];
     }
-    cell.textLabel.text = self.deviceArray.allKeys[indexPath.row];
+    DeviceShowModel *model = self.deviceArray[indexPath.row];
+    cell.textLabel.text = model.name;
     return cell;
 }
 
@@ -473,6 +472,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self hideDevicView:nil];
     NSError * error = nil;
-    [self.controlSocket connectToHost:self.deviceArray.allValues[indexPath.row] onPort:1322 error:&error];
+    DeviceShowModel *model = self.deviceArray[indexPath.row];
+    [self.controlSocket connectToHost:model.name onPort:1322 error:&error];
+    self.deviceNameLabel.text = model.name;
 }
 @end
